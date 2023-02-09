@@ -3,6 +3,9 @@ module.exports = {
   content: ["src/**/*.{astro,ts,tsx,md,mdx}"],
   theme: {
     extend: {
+      fontSize: {
+        "sm+": "0.9375rem", // 15px
+      },
       fontFamily: {
         display: ["Permanent Marker", "cursive"],
         serif: ["Merriweather", "serif"],
