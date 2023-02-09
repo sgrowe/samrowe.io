@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         display: ["Permanent Marker", "cursive"],
         serif: ["Merriweather", "serif"],
+        mono: ["IBM Plex Mono", "monospace"],
       },
       colors: {
         sunsetOrange: "rgb(212,214,197)",
