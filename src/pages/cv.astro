@@ -1,0 +1,39 @@
+---
+import { CVSection } from "../components/cv/CVSection"
+import "../styles.css"
+---
+
+<html lang="en-GB" class="font-serif">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sam Rowe - CV</title>
+  </head>
+  <body class="flex flex-col">
+    <div class="m-4 my-8 sm:mx-auto sm:max-w-[608px]">
+      <h1 class="font-bold">Sam Rowe</h1>
+      <p><a href="tel:+447955059583">07955059583</a></p>
+      <p><a href="mailto:sam@samrowe.io">sam@samrowe.io</a></p>
+
+      <CVSection title="Personal Summary">
+        <p>
+          I am a friendly and enthusiastic software developer who enjoys
+          collaborating with others. I’m always keen to learn new skills and
+          adapt quickly to new challenges.
+        </p>
+      </CVSection>
+
+      <CVSection title="Employment history">
+        <p class="font-bold">Vitamin London</p>
+        <p>Tech Lead — Oct 2022 - present</p>
+      </CVSection>
+    </div>
+  </body>
+</html>
