@@ -1,15 +1,12 @@
-import image from "@astrojs/image";
-import { defineConfig } from "astro/config";
-
 // https://astro.build/config
-import react from "@astrojs/react";
-
-// https://astro.build/config
-import mdx from "@astrojs/mdx";
+import cloudflare from "@astrojs/cloudflare"
+import mdx from "@astrojs/mdx"
+import react from "@astrojs/react"
+import { defineConfig } from "astro/config"
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [image({
-    serviceEntryPoint: "@astrojs/image/sharp"
-  }), react(), mdx()]
-});
+  integrations: [react(), mdx()],
+  output: "server",
+  adapter: cloudflare(),
+})

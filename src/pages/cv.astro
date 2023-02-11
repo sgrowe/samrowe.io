@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components"
 import { CVSection } from "../components/cv/CVSection"
 import { JobSection } from "../components/cv/JobSection"
 import bathUni from "../logos/bath-uni.gif"
@@ -62,11 +61,11 @@ const logoBaseStyles =
               "bg-black rounded px-5 py-4 top-0 w-20 xl:w-[6.25rem] xl:px-6 xl:py-5 xl:rounded-md",
             ]}
           >
-            <Image src={vitamin} alt="Vitamin London logo" />
+            <img src={vitamin} alt="Vitamin London logo" />
           </div>
 
           <ul class="list-disc ml-4">
-            <li>Hello</li>
+            <li>As the Tech Lead for this digital agency,</li>
           </ul>
         </JobSection>
 
@@ -85,7 +84,7 @@ const logoBaseStyles =
             },
           ]}
         >
-          <Image
+          <img
             class:list={[logoBaseStyles, "top-0 w-40 xl:w-[12.5rem]"]}
             src={redBadger}
             alt="Red Badger logo"
@@ -191,7 +190,7 @@ const logoBaseStyles =
             },
           ]}
         >
-          <Image
+          <img
             class:list={[
               logoBaseStyles,
               "top-0 p-4 rounded-md w-30 xl:w-[9rem] bg-[rgb(255,122,110)]",
@@ -264,7 +263,7 @@ const logoBaseStyles =
             },
           ]}
         >
-          <Image
+          <img
             class:list={[logoBaseStyles, "top-0 w-30 xl:w-[8rem]"]}
             src={qubit}
             alt="Qubit logo"
@@ -342,7 +341,7 @@ const logoBaseStyles =
           ]}
         >
           {/* for some reason this image is smaller as a gif than a png */}
-          <Image
+          <img
             class:list={[logoBaseStyles, "-top-1 w-40 xl:w-[12.5rem]"]}
             src={bathUni}
             alt="University of Bath logo"

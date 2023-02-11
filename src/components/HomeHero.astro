@@ -1,5 +1,4 @@
 ---
-import { Image } from "@astrojs/image/components"
 import me from "../me.jpeg"
 ---
 
@@ -8,7 +7,7 @@ import me from "../me.jpeg"
 >
 </div>
 <div class="relative min-h-[50vh] grow bg-gray-800 text-white">
-  <!-- TODO: ^ grainy gradient effect? -->
+  {/* TODO: ^ grainy gradient effect? */}
   <div class="w-[calc(100vw-70vh)] px-[10vw] py-[10vh] flex flex-col">
     <h1 class="flex flex-col gap-4 font-display text-4xl mb-4">
       <span class="opacity-80">Hey,</span>
@@ -19,8 +18,8 @@ import me from "../me.jpeg"
     </p>
   </div>
 
-  <!-- TODO: look into using <Picture> instead?? -->
-  <Image
+  {/* TODO: optimise image size? */}
+  <img
     src={me}
     class="absolute top-[-30vh] right-[5vw] h-[60vh] w-auto rounded-full shadow-2xl"
     alt=""
