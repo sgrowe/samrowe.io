@@ -1,6 +1,6 @@
-import type { ReactNode } from "react"
-import { CvH3 } from "./CVSubHeading"
-import { JobTitle } from "./JobTitle"
+import type { ReactNode } from 'react'
+import { CvH3 } from './CVSubHeading'
+import { JobTitle } from './JobTitle'
 
 type Props = {
   company: string

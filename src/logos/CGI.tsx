@@ -4,7 +4,7 @@ type Props = {
 
 export const CGILogo = ({ className }: Props) => (
   <svg
-    className={[className, "fill-[#e11937]"].join(" ")}
+    className={[className, 'fill-[#e11937]'].join(' ')}
     aria-label="CGI official logo"
     xmlns="http://www.w3.org/2000/svg"
     xmlSpace="preserve"

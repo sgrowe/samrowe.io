@@ -1,16 +1,16 @@
 ---
-import { CVSection } from "../components/cv/CVSection"
-import { JobSection } from "../components/cv/JobSection"
-import bathUni from "../logos/bath-uni.gif"
-import { CGILogo } from "../logos/CGI"
-import entale from "../logos/entale.png"
-import qubit from "../logos/qubit.png"
-import redBadger from "../logos/rb.png"
-import vitamin from "../logos/vitamin.png"
-import "../styles.css"
+import { CVSection } from '../components/cv/CVSection'
+import { JobSection } from '../components/cv/JobSection'
+import bathUni from '../logos/bath-uni.gif'
+import { CGILogo } from '../logos/CGI'
+import entale from '../logos/entale.png'
+import qubit from '../logos/qubit.png'
+import redBadger from '../logos/rb.png'
+import vitamin from '../logos/vitamin.png'
+import '../styles.css'
 
 const logoBaseStyles =
-  "absolute hidden mx-8 right-full lg:block print:!hidden opacity-30 group-hover:opacity-100 transition-opacity group-hover:duration-700 duration-300"
+  'absolute hidden mx-8 right-full lg:block print:!hidden opacity-30 group-hover:opacity-100 transition-opacity group-hover:duration-700 duration-300'
 ---
 
 <html lang="en-GB" class="font-serif">
@@ -49,16 +49,16 @@ const logoBaseStyles =
           company="Vitamin London"
           roles={[
             {
-              title: "Tech Lead",
-              from: "Oct 2022",
-              to: "present",
+              title: 'Tech Lead',
+              from: 'Oct 2022',
+              to: 'present',
             },
           ]}
         >
           <div
             class:list={[
               logoBaseStyles,
-              "bg-black rounded px-5 py-4 top-0 w-20 xl:w-[6.25rem] xl:px-6 xl:py-5 xl:rounded-md",
+              'bg-black rounded px-5 py-4 top-0 w-20 xl:w-[6.25rem] xl:px-6 xl:py-5 xl:rounded-md',
             ]}
           >
             <img src={vitamin} alt="Vitamin London logo" />
@@ -73,19 +73,19 @@ const logoBaseStyles =
           company="Red Badger"
           roles={[
             {
-              title: "Senior Software Engineer",
-              from: "Feb 2020",
-              to: "Sep 2022",
+              title: 'Senior Software Engineer',
+              from: 'Feb 2020',
+              to: 'Sep 2022',
             },
             {
-              title: "Software Engineer (Mid II)",
-              from: "March 2019",
-              to: "Jan 2020",
+              title: 'Software Engineer (Mid II)',
+              from: 'March 2019',
+              to: 'Jan 2020',
             },
           ]}
         >
           <img
-            class:list={[logoBaseStyles, "top-0 w-40 xl:w-[12.5rem]"]}
+            class:list={[logoBaseStyles, 'top-0 w-40 xl:w-[12.5rem]']}
             src={redBadger}
             alt="Red Badger logo"
           />
@@ -184,16 +184,16 @@ const logoBaseStyles =
           company="Entale"
           roles={[
             {
-              title: "Full Stack Engineer",
-              from: "October 2017",
-              to: "February 2019",
+              title: 'Full Stack Engineer',
+              from: 'October 2017',
+              to: 'February 2019',
             },
           ]}
         >
           <img
             class:list={[
               logoBaseStyles,
-              "top-0 p-4 rounded-md w-30 xl:w-[9rem] bg-[rgb(255,122,110)]",
+              'top-0 p-4 rounded-md w-30 xl:w-[9rem] bg-[rgb(255,122,110)]',
             ]}
             src={entale}
             alt="Entale logo"
@@ -257,14 +257,14 @@ const logoBaseStyles =
           company="Qubit"
           roles={[
             {
-              title: "Javascript Engineer",
-              from: "November 2016",
-              to: "October 2017",
+              title: 'Javascript Engineer',
+              from: 'November 2016',
+              to: 'October 2017',
             },
           ]}
         >
           <img
-            class:list={[logoBaseStyles, "top-0 w-30 xl:w-[8rem]"]}
+            class:list={[logoBaseStyles, 'top-0 w-30 xl:w-[8rem]']}
             src={qubit}
             alt="Qubit logo"
           />
@@ -297,13 +297,13 @@ const logoBaseStyles =
           company="CGI Group"
           roles={[
             {
-              title: "Software Developer",
-              from: "August 2015",
-              to: "October 2016",
+              title: 'Software Developer',
+              from: 'August 2015',
+              to: 'October 2016',
             },
           ]}
         >
-          <CGILogo className={[logoBaseStyles, "top-0 w-20"].join(" ")} />
+          <CGILogo className={[logoBaseStyles, 'top-0 w-20'].join(' ')} />
 
           <ul class="list-disc ml-4">
             <li>
@@ -334,15 +334,15 @@ const logoBaseStyles =
           company="University of Bath"
           roles={[
             {
-              title: "BSc Physics, 2:1",
-              from: "2011",
-              to: "2015",
+              title: 'BSc Physics, 2:1',
+              from: '2011',
+              to: '2015',
             },
           ]}
         >
           {/* for some reason this image is smaller as a gif than a png */}
           <img
-            class:list={[logoBaseStyles, "-top-1 w-40 xl:w-[12.5rem]"]}
+            class:list={[logoBaseStyles, '-top-1 w-40 xl:w-[12.5rem]']}
             src={bathUni}
             alt="University of Bath logo"
           />
