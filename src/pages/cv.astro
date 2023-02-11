@@ -1,13 +1,15 @@
 ---
+import { Image } from "@astrojs/image/components"
 import { CVSection } from "../components/cv/CVSection"
-import { CvH3 } from "../components/cv/CVSubHeading"
+import { JobSection } from "../components/cv/JobSection"
+import bathUni from "../logos/bath-uni.gif"
 import "../styles.css"
 ---
 
 <html lang="en-GB" class="font-serif">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
     <meta name="viewport" content="width=device-width" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +23,7 @@ import "../styles.css"
     <div class="m-4 my-8 sm:my-16 md:my-32 sm:mx-auto sm:max-w-[608px]">
       <div class="leading-6">
         <h1 class="font-bold text-sm+"><a href="/">Sam Rowe</a></h1>
-        <p><a href="tel:+447955059583">07955059583</a></p>
+        <p class="lining-nums"><a href="tel:+447955059583">07955059583</a></p>
         <p><a href="mailto:sam@samrowe.io">sam@samrowe.io</a></p>
       </div>
 
@@ -34,38 +36,289 @@ import "../styles.css"
       </CVSection>
 
       <CVSection title="Employment history">
-        <!-- TODO: maybe logos in the sidebar on big screens? -->
+        {/* TODO: maybe logos in the sidebar on big screens? */}
 
-        <div class="mb-8">
-          <CvH3 text="Vitamin London" />
-          <p class="leading-6">Tech Lead — Oct 2022 - present</p>
-        </div>
+        <JobSection
+          company="Vitamin London"
+          roles={[
+            {
+              title: "Tech Lead",
+              from: "Oct 2022",
+              to: "present",
+            },
+          ]}
+        >
+          <ul class="list-disc ml-4">
+            <li>Hello</li>
+          </ul>
+        </JobSection>
 
-        <div>
-          <CvH3 text="Red Badger" />
-          <p class="leading-6">
-            Senior Software Engineer — Feb 2020 – Sep 2022
-          </p>
-          <p class="leading-6">
-            Software Engineer (Mid II) — March 2019 – Jan 2020
-          </p>
-        </div>
+        <JobSection
+          company="Red Badger"
+          roles={[
+            {
+              title: "Senior Software Engineer",
+              from: "Feb 2020",
+              to: "Sep 2022",
+            },
+            {
+              title: "Software Engineer (Mid II)",
+              from: "March 2019",
+              to: "Jan 2020",
+            },
+          ]}
+        >
+          <h4 class="italic mb-1 mt-6">Client projects:</h4>
+          <ul class="list-disc space-y-4 ml-4">
+            <li>
+              <span class="font-bold">Levi’s</span>
+              <ul class="ml-4 list-dash">
+                <li>
+                  Developed an internal tool for Levi’s merchants to develop and
+                  collaborate on product lines throughout the various stages of
+                  the product season
+                </li>
+                <li>
+                  As the feature team lead for our “brief” feature, I:
+                  <ul class="ml-4 list-dash">
+                    <li>
+                      Collaborated with stakeholders to gather requirements and
+                      decide which features would best fit user needs during the
+                      “brief stage” of product line development
+                    </li>
+                    <li>
+                      Led a spike exploring different free and paid data grid
+                      libraries to determine which would best fit user needs,
+                      and then we presented this information back to the client
+                      and discussed which tool we would use going forward
+                    </li>
+                    <li>
+                      Participated in user engagement sessions to hear
+                      first-hand from users what the pain points of their
+                      current process are
+                    </li>
+                    <li>
+                      Collaborated with UX and UI designers to break down work
+                      into user stories and tickets with clear acceptance
+                      criteria, with a focus on providing value to users
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Demoed new features to users to increase adoption of the tool
+                  and gather feedback on what we could improve
+                </li>
+                <li>Interviewed senior and mid-level engineering candidates</li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="font-bold">Nando’s</span>
+              <ul class="ml-4 list-dash">
+                <li>
+                  Collaborated closely with other teams as we transitioned
+                  identity provider to improve uptime and security of the
+                  Nando’s app and websites
+                </li>
+                <li>
+                  Developed a GraphQL API in Rust for other Nando’s apps and
+                  services to consume
+                </li>
+                <li>
+                  Mentored more junior developers on how to work with the
+                  Nando’s mono-repo and Kubernetes platform
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <span class="font-bold">MHRA</span>
+              <ul class="ml-4 list-dash">
+                <li>
+                  Helped create an internal micro-services platform using
+                  Kubernetes with Istio as the service mesh, ArgoCD for
+                  continuous deployment and Terraform for provisioning
+                  infrastructure. The code for this project is open source and
+                  available at <a
+                    class="text-blue-500 hover:underline"
+                    href="https://github.com/MHRA/products/pulls?q=is:pr+author:sgrowe+sort:created-asc"
+                    >github.com/MHRA/products</a
+                  >
+                </li>
+                <li>
+                  Set up monitoring and alerting using Prometheus and Azure
+                  monitor, along with documentation on how this set up worked
+                </li>
+                <li>
+                  Created continuous integration and deployment pipelines for
+                  multiple Rust micro-services
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </JobSection>
+
+        <JobSection
+          company="Entale"
+          roles={[
+            {
+              title: "Full Stack Engineer",
+              from: "October 2017",
+              to: "February 2019",
+            },
+          ]}
+        >
+          <ul class="list-disc ml-4">
+            <li>
+              Rapidly built upon the pre-existing prototype to create a high
+              quality iOS podcast app and publishing platform.
+            </li>
+            <li>
+              Developed various backend services that interact with Redis, AWS
+              DynamoDB and Elasticsearch to support the diverse range of
+              features offered by the Entale platform.
+            </li>
+            <li>
+              Created and maintained several React web apps and a React Native
+              mobile app which involved improving performance and fixing
+              difficult to debug issues, such as failed podcast downloads, based
+              upon user feedback.
+            </li>
+            <li>
+              Pushed for higher quality in our products whilst still maintaining
+              a high pace of development through automated testing, static type
+              checking using Flow, code review, and continuous integration to
+              ensure broken code was not released to users.
+            </li>
+            <li>
+              Delivered a talk at elm-conf titled “Complex animations done well”
+              (available at <a
+                class="text-blue-500 hover:underline"
+                href="https://youtu.be/DBVHxkMBfF4"
+                >https://youtu.be/DBVHxkMBfF4</a
+              >).
+            </li>
+            <li>
+              Engaged in regular retrospectives to improve our product
+              development process where I suggested and implemented many
+              improvements, such as a transition from two week to one week long
+              sprints to reduce the amount of wasted planning effort we
+              undertook.
+            </li>
+            <li>
+              Made changes to our AWS infrastructure using Terraform and
+              deployed services using Docker to ensure all of our environments
+              and deployments were easily reproducible and version-controlled.
+            </li>
+            <li>
+              Debugged and fixed production outages and various issues ranging
+              from DynamoDB throttling to <span class="lining-nums">EC2</span> instances
+              reaching CPU limits.
+            </li>
+            <li>
+              Created a service to scrape the entire iTunes podcast directory &
+              load it into ElasticSearch in a timely manner.
+            </li>
+          </ul>
+        </JobSection>
+
+        <JobSection
+          company="Qubit"
+          roles={[
+            {
+              title: "Javascript Engineer",
+              from: "November 2016",
+              to: "October 2017",
+            },
+          ]}
+        >
+          <ul class="list-disc ml-4">
+            <li>
+              Optimised sales on client websites through A/B testing and
+              personalisation developed in Javascript using React and jQuery.
+            </li>
+            <li>
+              Delivered training on React and also Elm to fellow engineers who
+              may not have used either before.
+            </li>
+            <li>
+              As part of our code review process, I provided constructive and
+              friendly feedback to other engineers on the code they had written.
+            </li>
+            <li>
+              Delivered training and support to clients via email and in-person
+              to enable them to make the most effective use of our platform.
+            </li>
+            <li>
+              Collaborated with designers, strategists and other developers to
+              maximise the impact and effectiveness of the tests we produced.
+            </li>
+          </ul>
+        </JobSection>
+
+        <JobSection
+          company="CGI Group"
+          roles={[
+            {
+              title: "Software Developer",
+              from: "August 2015",
+              to: "October 2016",
+            },
+          ]}
+        >
+          <ul class="list-disc ml-4">
+            <li>
+              Raised money for charity in the Million Makers entrepreneurial
+              competition.
+            </li>
+            <li>
+              Developed both the server-side and front-end code of the ePayfact2
+              payroll system which serves many commercial and public sector
+              clients.
+            </li>
+            <li>
+              Worked in a team to integrate a complex banking system using a
+              mixture of technologies, such as message queues, web services and
+              managed file transfers.
+            </li>
+            <li>
+              Developed an insurance message processing web service written in
+              Python, deployed it on Azure, and created a UI in Angular JS which
+              consumed the web service’s api.
+            </li>
+          </ul>
+        </JobSection>
       </CVSection>
 
       <CVSection title="Education">
-        <!-- UoB logo in sidebar? -->
-        <CvH3 text="University of Bath" />
-        <p>BSc Physics, 2:1, graduated 2015</p>
+        {/* for some reason this image is smaller as a gif than a png */}
+        <Image
+          class="absolute right-full top-9 mx-8 opacity-80 hidden lg:block w-40 xl:w-[200px] print:!hidden"
+          src={bathUni}
+          alt=""
+        />
 
-        <p class="mt-8">
-          As part of my final year project supervised by BAE Systems, I created
-          optical simulations written in Python.
-        </p>
+        <JobSection
+          company="University of Bath"
+          roles={[
+            {
+              title: "BSc Physics, 2:1",
+              from: "2011",
+              to: "2015",
+            },
+          ]}
+        >
+          <p class="mt-8">
+            As part of my final year project supervised by BAE Systems, I
+            created optical simulations written in Python.
+          </p>
+        </JobSection>
       </CVSection>
 
       <CVSection title="Other skills and interests">
         <ul class="list-disc ml-4">
           <li>PADI-qualified open water scuba diver</li>
+          <li>Music festivals...</li>
         </ul>
       </CVSection>
     </div>

@@ -15,6 +15,9 @@ module.exports = {
         sunsetOrange: "rgb(212,214,197)",
         sunsetBlue: "rgb(137,184,232)",
       },
+      listStyleType: {
+        dash: "'– '",
+      },
     },
   },
   plugins: [],
