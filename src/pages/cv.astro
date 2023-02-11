@@ -4,7 +4,7 @@ import { JobSection } from '../components/cv/JobSection'
 import bathUni from '../logos/bath-uni.gif'
 import { CGILogo } from '../logos/CGI'
 import entale from '../logos/entale.png'
-import qubit from '../logos/qubit.png'
+import { Qubit } from '../logos/Qubit'
 import redBadger from '../logos/rb.png'
 import vitamin from '../logos/vitamin.png'
 import '../styles.css'
@@ -65,7 +65,24 @@ const logoBaseStyles =
           </div>
 
           <ul class="list-disc ml-4">
-            <li>As the Tech Lead for this digital agency,</li>
+            <li>
+              As the Tech Lead for this digital agency, I am responsible for
+            </li>
+            <!--
+
+              - Addressed significant tech debt in a pragmatic way
+              - Across many projects
+              - Drones
+              - Led the onboarding
+              - Debugged legacy apps
+              - Deployed apps to different services depending on complexity - from render.com to k8s
+              - Helped transition the team to better best practices - e.g. TS, git workflow
+              - Engaged and educated rest of business on technical best practices and issues
+              - Interviewed, review tech tests and hired new engineers
+              - Identified the skill sets of the current team and what skills gaps we had (esp. with respect to upcoming projects)
+              - Delivering projects according to budget available
+
+             -->
           </ul>
         </JobSection>
 
@@ -263,10 +280,8 @@ const logoBaseStyles =
             },
           ]}
         >
-          <img
-            class:list={[logoBaseStyles, 'top-0 w-30 xl:w-[8rem]']}
-            src={qubit}
-            alt="Qubit logo"
+          <Qubit
+            className={[logoBaseStyles, 'top-0 w-32 xl:w-[9rem]'].join(' ')}
           />
 
           <ul class="list-disc ml-4">
