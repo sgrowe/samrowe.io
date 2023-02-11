@@ -3,12 +3,15 @@ import { Image } from "@astrojs/image/components"
 import { CVSection } from "../components/cv/CVSection"
 import { JobSection } from "../components/cv/JobSection"
 import bathUni from "../logos/bath-uni.gif"
+import { CGILogo } from "../logos/CGI"
+import entale from "../logos/entale.png"
+import qubit from "../logos/qubit.png"
 import redBadger from "../logos/rb.png"
 import vitamin from "../logos/vitamin.png"
 import "../styles.css"
 
 const logoBaseStyles =
-  "absolute hidden lg:block print:!hidden opacity-70 group-hover:opacity-100 transition-opacity group-hover:duration-500 duration-300"
+  "absolute hidden mx-8 right-full lg:block print:!hidden opacity-30 group-hover:opacity-100 transition-opacity group-hover:duration-700 duration-300"
 ---
 
 <html lang="en-GB" class="font-serif">
@@ -56,7 +59,7 @@ const logoBaseStyles =
           <div
             class:list={[
               logoBaseStyles,
-              "bg-black rounded px-5 py-4 right-full top-0 mx-8 w-20 xl:w-[6.25rem] xl:px-6 xl:py-5 xl:rounded-md",
+              "bg-black rounded px-5 py-4 top-0 w-20 xl:w-[6.25rem] xl:px-6 xl:py-5 xl:rounded-md",
             ]}
           >
             <Image src={vitamin} alt="Vitamin London logo" />
@@ -83,10 +86,7 @@ const logoBaseStyles =
           ]}
         >
           <Image
-            class:list={[
-              logoBaseStyles,
-              "right-full top-0 mx-8 w-40 xl:w-[12.5rem]",
-            ]}
+            class:list={[logoBaseStyles, "top-0 w-40 xl:w-[12.5rem]"]}
             src={redBadger}
             alt="Red Badger logo"
           />
@@ -191,6 +191,15 @@ const logoBaseStyles =
             },
           ]}
         >
+          <Image
+            class:list={[
+              logoBaseStyles,
+              "top-0 p-4 rounded-md w-30 xl:w-[9rem] bg-[rgb(255,122,110)]",
+            ]}
+            src={entale}
+            alt="Entale logo"
+          />
+
           <ul class="list-disc ml-4">
             <li>
               Rapidly built upon the pre-existing prototype to create a high
@@ -255,6 +264,12 @@ const logoBaseStyles =
             },
           ]}
         >
+          <Image
+            class:list={[logoBaseStyles, "top-0 w-30 xl:w-[8rem]"]}
+            src={qubit}
+            alt="Qubit logo"
+          />
+
           <ul class="list-disc ml-4">
             <li>
               Optimised sales on client websites through A/B testing and
@@ -289,6 +304,8 @@ const logoBaseStyles =
             },
           ]}
         >
+          <CGILogo className={[logoBaseStyles, "top-0 w-20"].join(" ")} />
+
           <ul class="list-disc ml-4">
             <li>
               Raised money for charity in the Million Makers entrepreneurial
@@ -326,10 +343,7 @@ const logoBaseStyles =
         >
           {/* for some reason this image is smaller as a gif than a png */}
           <Image
-            class:list={[
-              logoBaseStyles,
-              "right-full -top-1 mx-8 w-40 xl:w-[12.5rem]",
-            ]}
+            class:list={[logoBaseStyles, "-top-1 w-40 xl:w-[12.5rem]"]}
             src={bathUni}
             alt="University of Bath logo"
           />
