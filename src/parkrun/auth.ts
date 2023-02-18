@@ -1,4 +1,12 @@
-export const fetchAccessToken = async () => {
+let token: string | null = null
+
+export const getParkrunAccessToken = async (): Promise<string> => {
+  token = token ?? (await fetchAccessToken())
+
+  return token
+}
+
+const fetchAccessToken = async () => {
   // Based on this code:
   // https://github.com/Prouser123/parkrun.js/blob/685137962bd6b6a75ba0ff41beb5818529aa6bad/src/auth.ts
 

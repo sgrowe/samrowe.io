@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { getParkrunAccessToken } from './auth'
 
 const myAthleteId = import.meta.env.PARKRUN_ATHLETE_ID
 
@@ -35,8 +36,9 @@ const responseSchema = z.object({
   }),
 })
 
-export const fetchParkrunResults = async (access_token: string) => {
-  console.log('fetch')
+export const fetchParkrunResults = async () => {
+  const access_token = await getParkrunAccessToken()
+
   const resp = await fetch(
     `https://api.parkrun.com/v1/results?access_token=${access_token}&athleteId=${myAthleteId}`
   )

@@ -1,12 +1,15 @@
 ---
-import '@fontsource/ibm-plex-mono'
-import { ParkrunLineChart } from '../components/ParkrunLineChart'
-import { fetchAccessToken } from '../parkrun/auth'
+import '@fontsource/ibm-plex-mono/400.css'
+import '@fontsource/ibm-plex-mono/500.css'
+import { DateTime } from 'luxon'
+import {
+  ParkrunLineChart,
+  Props as ParkrunLineChartProps,
+} from '../components/ParkrunLineChart'
+import { eventsLoader } from '../parkrun/events'
 import { fetchParkrunResults } from '../parkrun/results'
 
-const parkrunToken = await fetchAccessToken()
-
-const results = await fetchParkrunResults(parkrunToken)
+const results = await fetchParkrunResults()
 
 const parseRunTime = (runTime: string): number => {
   let time = 0
@@ -19,10 +22,21 @@ const parseRunTime = (runTime: string): number => {
   return time
 }
 
-const parkrunData = results.map(({ EventDate, RunTime }) => ({
-  x: EventDate,
-  y: parseRunTime(RunTime),
-}))
+const parkrunData: ParkrunLineChartProps['data'] = await Promise.all(
+  results
+    .map(({ EventDate, RunTime, EventNumber }) => ({
+      epochTimeSecs: DateTime.fromISO(EventDate).toUnixInteger(),
+      runTimeSecs: parseRunTime(RunTime),
+      EventNumber,
+    }))
+    .filter(
+      ({ epochTimeSecs }) => DateTime.fromSeconds(epochTimeSecs).year >= 2021
+    )
+    .map(async ({ EventNumber, ...data }) => ({
+      eventName: (await eventsLoader.load(EventNumber)).EventShortName,
+      ...data,
+    }))
+)
 ---
 
 <html lang="en-GB" class="font-mono">
@@ -36,7 +50,7 @@ const parkrunData = results.map(({ EventDate, RunTime }) => ({
     <div class="my-12">
       <h1 class="text-lg mb-12">Parkrun history</h1>
 
-      <ParkrunLineChart data={parkrunData} />
+      <ParkrunLineChart data={parkrunData} client:load />
     </div>
   </body>
 </html>
