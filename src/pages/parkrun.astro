@@ -45,6 +45,12 @@ const parkrunData: ParkrunLineChartProps['data'] = await Promise.all(
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
     <meta name="viewport" content="width=device-width" />
     <title>Parkrun results history - Sam Rowe</title>
+
+    <style is:global>
+      .recharts-tooltip-wrapper {
+        outline: none;
+      }
+    </style>
   </head>
   <body class="flex flex-col text-sm items-center">
     <div class="my-12">
