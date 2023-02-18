@@ -1,4 +1,5 @@
 ---
+import '@fontsource/merriweather'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
 import bathUni from '../logos/bath-uni.gif'
@@ -18,12 +19,6 @@ const logoBaseStyles =
     <meta charset="utf-8" />
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <title>Sam Rowe - CV</title>
   </head>
   <body class="flex flex-col text-sm">
@@ -43,8 +38,6 @@ const logoBaseStyles =
       </CVSection>
 
       <CVSection title="Employment history">
-        {/* TODO: maybe logos in the sidebar on big screens? */}
-
         <JobSection
           company="Vitamin London"
           roles={[

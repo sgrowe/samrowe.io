@@ -5,6 +5,9 @@ specifiers:
   '@astrojs/mdx': ^0.16.0
   '@astrojs/react': ^2.0.2
   '@cloudflare/workers-types': ^4.20230115.0
+  '@fontsource/ibm-plex-mono': ^4.5.13
+  '@fontsource/merriweather': ^4.5.14
+  '@fontsource/permanent-marker': ^4.5.7
   '@types/react': ^18.0.21
   '@types/react-dom': ^18.0.6
   astro: ^2.0.10
@@ -19,6 +22,9 @@ dependencies:
   '@astrojs/cloudflare': 6.1.2_astro@2.0.10
   '@astrojs/mdx': 0.16.0_astro@2.0.10
   '@astrojs/react': 2.0.2_fxtgt6bjwd6p4cwoordejim2zi
+  '@fontsource/ibm-plex-mono': 4.5.13
+  '@fontsource/merriweather': 4.5.14
+  '@fontsource/permanent-marker': 4.5.7
   '@types/react': 18.0.27
   '@types/react-dom': 18.0.10
   astro: 2.0.10
@@ -863,6 +869,18 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/ibm-plex-mono/4.5.13:
+    resolution: {integrity: sha512-KAE7X2LgCV4X6p7vj1h2phRnhPX4YUa8FBAB0Jj9xW7Q+p+k2ce4HEAMJJ2RFHI075ClgQx+KZuDBNuiKgp5yw==}
+    dev: false
+
+  /@fontsource/merriweather/4.5.14:
+    resolution: {integrity: sha512-kDMIAokOvE9bYf+CDmEWzV3xtR8cRJlw/BipjhxqD9MIRZfU348cZ8xhHhmPXmxRiEjZLor4xxHXqps7eCvGQg==}
+    dev: false
+
+  /@fontsource/permanent-marker/4.5.7:
+    resolution: {integrity: sha512-1WFV2w9zBFaQ2BIH9xUq+9sRFs+uVg/QDLCSOOHrmIQPhAg0YHRoqCqAXxhHPnzqCp2Ai9d7ASRQZxbDhb6Itw==}
+    dev: false
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
