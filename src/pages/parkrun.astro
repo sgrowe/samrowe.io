@@ -1,0 +1,42 @@
+---
+import '@fontsource/ibm-plex-mono'
+import { ParkrunLineChart } from '../components/ParkrunLineChart'
+import { fetchAccessToken } from '../parkrun/auth'
+import { fetchParkrunResults } from '../parkrun/results'
+
+const parkrunToken = await fetchAccessToken()
+
+const results = await fetchParkrunResults(parkrunToken)
+
+const parseRunTime = (runTime: string): number => {
+  let time = 0
+
+  for (const t of runTime.split(/:/g).map((x) => Number(x))) {
+    time *= 60
+    time += t
+  }
+
+  return time
+}
+
+const parkrunData = results.map(({ EventDate, RunTime }) => ({
+  x: EventDate,
+  y: parseRunTime(RunTime),
+}))
+---
+
+<html lang="en-GB" class="font-mono">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Parkrun results history - Sam Rowe</title>
+  </head>
+  <body class="flex flex-col text-sm items-center">
+    <div class="my-12">
+      <h1 class="text-lg mb-12">Parkrun history</h1>
+
+      <ParkrunLineChart data={parkrunData} />
+    </div>
+  </body>
+</html>
