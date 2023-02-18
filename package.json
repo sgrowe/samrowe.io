@@ -4,17 +4,16 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "dev:css": "pnpm run css --watch",
     "start": "astro dev",
-    "build": "pnpm run css --minify && astro build",
+    "build": "astro build",
     "deploy": "astro build && wrangler pages publish dist",
-    "preview": "astro preview",
-    "css": "tailwindcss -o src/styles.css"
+    "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^6.1.2",
     "@astrojs/mdx": "^0.16.0",
     "@astrojs/react": "^2.0.2",
+    "@astrojs/tailwind": "^3.0.1",
     "@fontsource/ibm-plex-mono": "^4.5.13",
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/permanent-marker": "^4.5.7",
