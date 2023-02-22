@@ -1,0 +1,63 @@
+---
+import '@fontsource/ibm-plex-mono'
+import '@fontsource/merriweather'
+import '@fontsource/permanent-marker'
+import { FoodSummary, Food } from '../components/FoodSummary'
+
+type Venue = {
+  name: string
+  notes?: string
+  foods: readonly Food[]
+}
+
+const places: readonly Venue[] = [
+  {
+    name: 'Leon',
+    notes: 'All of the breakfast boxes are super high in sat fat',
+    foods: [
+      {
+        name: 'Brazilian black bean',
+        url: 'https://leon.co/menu/brazillian-black-bean/',
+        cals: 554,
+        carbs: 75,
+        effectiveCarbs: 50,
+        protein: 18,
+        satFat: 1.9,
+      },
+      {
+        name: 'Aioli Chicken Box',
+        url: 'https://leon.co/menu/aioli-chicken-box/',
+        cals: 641,
+        carbs: 60,
+        protein: 29,
+        satFat: 4.9,
+      },
+    ],
+  },
+]
+---
+
+<html lang="en-GB" class="font-serif">
+  <head>
+    <meta charset="utf-8" />
+    {/* TODO: use a different favicon, maybe a letter S or something? */}
+    <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Sam Rowe</title>
+  </head>
+  <body class="flex flex-col">
+    <div>
+      {
+        places.map(({ name, foods }) => (
+          <div>
+            <h2>{name}</h2>
+
+            {foods.map((food) => (
+              <FoodSummary food={food} />
+            ))}
+          </div>
+        ))
+      }
+    </div>
+  </body>
+</html>
