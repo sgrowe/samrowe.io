@@ -1,19 +1,71 @@
 ---
 import '@fontsource/ibm-plex-mono'
-import '@fontsource/merriweather'
-import '@fontsource/permanent-marker'
-import { FoodSummary, Food } from '../components/FoodSummary'
+import '@fontsource/merriweather/300-italic.css'
+import '@fontsource/merriweather/300.css'
+import '@fontsource/merriweather/400-italic.css'
+import '@fontsource/merriweather/400.css'
+import '@fontsource/merriweather/700-italic.css'
+import '@fontsource/merriweather/700.css'
+import { EatingOutTOC } from '../components/eating-out/EatingOutTOC'
+import { EatingOutVenue, Venue } from '../components/eating-out/EatingOutVenue'
+import { slugify } from '../utils/slugify'
 
-type Venue = {
-  name: string
-  notes?: string
-  foods: readonly Food[]
-}
-
-const places: readonly Venue[] = [
+const venuesRaw: readonly Omit<Venue, 'slug'>[] = [
+  {
+    name: 'Pret',
+    notes:
+      'No guarantees anything is gluten-free — risk of cross-contamination',
+    foods: [
+      {
+        name: 'Smoked Salmon Protein Box',
+        url: 'https://www.pret.co.uk/en-GB/products/UK007304/smoked-salmon-protein-box',
+        cals: 467,
+        satFat: 6.4,
+        carbs: 8.6,
+        effectiveCarbs: 4.4,
+        protein: 28.5,
+      },
+      {
+        name: 'Tuna Nicoise Salad',
+        url: 'https://www.pret.co.uk/en-GB/products/UK006483/tuna-nicoise-salad',
+        cals: 380,
+        satFat: 3.6,
+        carbs: 9.1,
+        effectiveCarbs: 7.5,
+        protein: 29.9,
+      },
+      {
+        name: 'Crayfish & Avo Salad Bowl',
+        url: 'https://www.pret.co.uk/en-GB/products/UK020018/crayfish-and-avo-salad-bowl',
+        cals: 423,
+        carbs: 10,
+        effectiveCarbs: 7.8,
+        satFat: 5.9,
+        protein: 17.7,
+      },
+      {
+        name: 'Egg & Spinach Protein Pot',
+        url: 'https://www.pret.co.uk/en-GB/products/UK005381/egg-and-spinach-protein-pot',
+        cals: 103,
+        satFat: 1.5,
+        carbs: 2.3,
+        effectiveCarbs: 0.2,
+        protein: 11.4,
+      },
+      {
+        name: 'Spicy Chorizo & Butter Bean Soup',
+        url: 'https://www.pret.co.uk/en-GB/products/UK020042/spicy-chorizo-and-butter-bean-soup',
+        cals: 228,
+        satFat: 3.2,
+        carbs: 14.2,
+        effectiveCarbs: 10.8,
+        protein: 13.1,
+      },
+    ],
+  },
   {
     name: 'Leon',
-    notes: 'All of the breakfast boxes are super high in sat fat',
+    notes: 'All of the breakfast boxes are super high in saturated fat',
     foods: [
       {
         name: 'Brazilian black bean',
@@ -86,29 +138,29 @@ const places: readonly Venue[] = [
     ],
   },
 ]
+
+const venues = venuesRaw.map((v) => ({
+  slug: slugify(v.name),
+  ...v,
+}))
 ---
 
-<html lang="en-GB" class="font-serif">
+<html lang="en-GB" class="font-serif scroll-smooth">
   <head>
     <meta charset="utf-8" />
     {/* TODO: use a different favicon, maybe a letter S or something? */}
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
     <meta name="viewport" content="width=device-width" />
-    <title>Sam Rowe</title>
+    <title>Eating out guide - Sam Rowe</title>
+    <meta name="robots" content="noindex" />
   </head>
-  <body class="flex flex-col">
-    <div>
-      {
-        places.map(({ name, foods }) => (
-          <div>
-            <h2>{name}</h2>
+  <body class="flex flex-col text-slate-700">
+    <div class="container max-w-lg mx-auto py-12 px-4 flex flex-col gap-12">
+      <h1 class="italic text-lg">Eating out guide</h1>
 
-            {foods.map((food) => (
-              <FoodSummary food={food} />
-            ))}
-          </div>
-        ))
-      }
+      <EatingOutTOC venues={venues} />
+
+      {venues.map((venue) => <EatingOutVenue venue={venue} />)}
     </div>
   </body>
 </html>
