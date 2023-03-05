@@ -1,9 +1,9 @@
 ---
-// TODO: import different font weights if needed?
-import '@fontsource/ibm-plex-mono'
-import '@fontsource/merriweather'
+import '@fontsource/ibm-plex-mono/400.css'
+import '@fontsource/ibm-plex-mono/500-italic.css'
 import '@fontsource/permanent-marker'
-import HomeHero from '../components/HomeHero.astro'
+import { HomeHero } from '../components/home/hero'
+import me from '../me-optimised.jpeg'
 ---
 
 <html lang="en-GB">
@@ -15,6 +15,6 @@ import HomeHero from '../components/HomeHero.astro'
     <title>Sam Rowe</title>
   </head>
   <body class="flex flex-col">
-    <HomeHero />
+    <HomeHero imgUrl={me} />
   </body>
 </html>
