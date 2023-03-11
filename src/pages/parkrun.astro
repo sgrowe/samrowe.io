@@ -10,6 +10,8 @@ import { eventsLoader } from '../parkrun/events'
 import { fetchParkrunResults } from '../parkrun/results'
 import { range } from '../utils/range'
 
+const startYear = 2021
+
 const results = await fetchParkrunResults()
 
 const parseRunTime = (runTime: string): number => {
@@ -31,17 +33,21 @@ const parkrunData: ParkrunLineChartProps['data'] = await Promise.all(
       EventNumber,
     }))
     .filter(
-      ({ epochTimeSecs }) => DateTime.fromSeconds(epochTimeSecs).year >= 2021
+      ({ epochTimeSecs }) =>
+        DateTime.fromSeconds(epochTimeSecs).year >= startYear
     )
     .map(async ({ EventNumber, ...data }) => ({
       eventName: (await eventsLoader.load(EventNumber)).EventShortName,
+      date: DateTime.fromSeconds(data.epochTimeSecs)
+        .setLocale('en-GB')
+        .toLocaleString(),
       ...data,
     }))
 )
 
 const currentYear = DateTime.now().year
 
-const years = range(2022, currentYear).map((year) => ({
+const years = range(startYear + 1, currentYear).map((year) => ({
   year,
   epochTime: DateTime.fromObject({ year }).toUnixInteger(),
 }))

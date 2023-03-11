@@ -7,11 +7,14 @@ export type Props = {
     year: number
     epochTime: number
   }[]
-  data: {
-    eventName: string
-    epochTimeSecs: number
-    runTimeSecs: number
-  }[]
+  data: Payload[]
+}
+
+type Payload = {
+  eventName: string
+  epochTimeSecs: number
+  runTimeSecs: number
+  date: string
 }
 
 export const ParkrunLineChart = ({ years, data }: Props) => {
@@ -62,11 +65,14 @@ const RaceResultTooltip = ({
 }: TooltipProps<number, string>) => {
   const data = payload && payload[0]
 
-  if (active && data && data.value) {
+  if (active && data?.value) {
+    const { eventName, date }: Payload = data.payload
+
     return (
-      <div>
-        <p className="font-medium">{data.payload.eventName}</p>
-        <p>Time: {formatRunTime(data.value)}s</p>
+      <div className="flex flex-col">
+        <p className="font-medium">{formatRunTime(data.value)}s</p>
+        <p className="opacity-50">{eventName}</p>
+        <p className="opacity-50">{date}</p>
       </div>
     )
   }
