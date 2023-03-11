@@ -5,9 +5,9 @@ type Props = {
 }
 
 export const JobTitle = ({ title, from, to }: Props) => (
-  <div>
+  <div className="mb-4">
     <p>{title}</p>
-    <p className="mb-4 text-xs font-light">
+    <p className="text-xs font-light">
       {from} – {to}
     </p>
   </div>

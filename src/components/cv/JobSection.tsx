@@ -15,12 +15,14 @@ type Role = {
 }
 
 export const JobSection = ({ company, roles, children }: Props) => (
-  <section className="group relative mb-8 leading-6">
+  <section className="group relative mb-8">
     <CvH3 text={company} />
 
-    {roles.map(({ title, from, to }, i) => (
-      <JobTitle key={i} title={title} from={from} to={to} />
-    ))}
+    <div className="pb-2">
+      {roles.map(({ title, from, to }, i) => (
+        <JobTitle key={i} title={title} from={from} to={to} />
+      ))}
+    </div>
 
     {children}
   </section>

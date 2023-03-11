@@ -26,7 +26,7 @@ export const HomeHero = ({ imgUrl }: Props) => (
 
       <div className="px-[10vw] pb-12">
         <p className="font-mono text-2xl">
-          <a href="/cv">
+          <a href="/cv" className="group">
             View my{' '}
             <abbr
               className="tracking-wider no-underline"
@@ -34,7 +34,9 @@ export const HomeHero = ({ imgUrl }: Props) => (
             >
               CV
             </abbr>{' '}
-            <span className="font-serif">→</span>
+            <span className="inline-block font-serif transition-transform duration-300 group-hover:translate-x-2">
+              →
+            </span>
           </a>
         </p>
       </div>

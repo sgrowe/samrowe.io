@@ -1,6 +1,10 @@
 ---
-// TODO: import different font weights as needed
-import '@fontsource/merriweather'
+import '@fontsource/merriweather/300-italic.css'
+import '@fontsource/merriweather/300.css'
+import '@fontsource/merriweather/400-italic.css'
+import '@fontsource/merriweather/400.css'
+import '@fontsource/merriweather/700-italic.css'
+import '@fontsource/merriweather/700.css'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
 import bathUni from '../logos/bath-uni.gif'
@@ -21,9 +25,9 @@ const logoBaseStyles =
     <meta name="viewport" content="width=device-width" />
     <title>Sam Rowe - CV</title>
   </head>
-  <body class="flex flex-col text-sm">
+  <body class="flex flex-col text-sm leading-6">
     <div class="m-4 my-8 sm:my-16 md:my-32 sm:mx-auto sm:max-w-[608px]">
-      <div class="leading-6">
+      <div>
         <h1 class="font-bold text-sm+"><a href="/">Sam Rowe</a></h1>
         <p class="lining-nums"><a href="tel:+447955059583">07955059583</a></p>
         <p><a href="mailto:sam@samrowe.io">sam@samrowe.io</a></p>
@@ -57,9 +61,32 @@ const logoBaseStyles =
             <img src={vitamin} alt="Vitamin London logo" />
           </div>
 
+          <p class="mb-2">
+            As the Tech Lead for this digital agency, I am responsible for:
+          </p>
           <ul class="list-disc ml-4">
             <li>
-              As the Tech Lead for this digital agency, I am responsible for
+              Identifying skills gaps in the current team and addressing them by
+              hiring new staff and mentoring existing team members
+            </li>
+            <li>
+              Working with developers, project managers and clients across many
+              projects to ensure high quality work is delivered within agreed
+              upon timescales
+            </li>
+            <li>
+              Gradually transitioning the team to tools and working practices
+              which improve our pace of development (such as Typescript,
+              Tailwind CSS and an improved git workflow)
+            </li>
+            <li>
+              Working with the team to provide technical leadership on which
+              tools, hosting services and development practices we should use
+              and standardise on
+            </li>
+            <li>
+              Deploying and monitoring a diverse mix of projects using AWS,
+              Kubernetes and Render.com
             </li>
 
             <!--
@@ -111,7 +138,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             alt="Red Badger logo"
           />
 
-          <h4 class="italic mb-1 mt-6">Client projects:</h4>
+          <h4 class="italic mb-1">Client projects:</h4>
           <ul class="list-disc space-y-4 ml-4">
             <li>
               <span class="font-bold">Levi’s</span>
@@ -285,7 +312,10 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
           ]}
         >
           <Qubit
-            className={[logoBaseStyles, 'top-0 w-32 xl:w-[9rem]'].join(' ')}
+            className={[
+              logoBaseStyles,
+              'top-0 w-32 xl:w-[9rem] translate-x-2',
+            ].join(' ')}
           />
 
           <ul class="list-disc ml-4">
@@ -366,7 +396,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             alt="University of Bath logo"
           />
 
-          <p class="mt-8">
+          <p>
             As part of my final year project supervised by BAE Systems, I
             created optical simulations written in Python.
           </p>
@@ -376,7 +406,10 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
       <CVSection title="Other skills and interests">
         <ul class="list-disc ml-4">
           <li>PADI-qualified open water scuba diver</li>
-          <li>Music festivals...</li>
+          <li>Music festivals</li>
+          <li>Football</li>
+          <li>Skiing</li>
+          <li>Travelling</li>
         </ul>
       </CVSection>
     </div>
