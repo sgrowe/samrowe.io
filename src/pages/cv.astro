@@ -7,10 +7,10 @@ import '@fontsource/merriweather/700-italic.css'
 import '@fontsource/merriweather/700.css'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
-import bathUni from '../logos/bath-uni.gif'
 import { CGILogo } from '../logos/CGI'
-import entale from '../logos/entale.png'
 import { Qubit } from '../logos/Qubit'
+import bathUni from '../logos/bath-uni.gif'
+import entale from '../logos/entale.png'
 import redBadger from '../logos/rb.png'
 import vitamin from '../logos/vitamin.png'
 
@@ -26,10 +26,10 @@ const logoBaseStyles =
     <title>Sam Rowe - CV</title>
   </head>
   <body class="flex flex-col text-sm leading-6">
-    <div class="m-4 my-8 sm:my-16 md:my-32 sm:mx-auto sm:max-w-[608px]">
+    <div class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32">
       <div>
-        <h1 class="font-bold text-sm+"><a href="/">Sam Rowe</a></h1>
-        <p class="lining-nums"><a href="tel:+447955059583">07955059583</a></p>
+        <h1 class="text-sm+ font-bold"><a href="/">Sam Rowe</a></h1>
+        <!-- <p class="lining-nums"><a href="tel:+447955059583">07955059583</a></p> -->
         <p><a href="mailto:sam@samrowe.io">sam@samrowe.io</a></p>
       </div>
 
@@ -64,7 +64,7 @@ const logoBaseStyles =
           <p class="mb-2">
             As the Tech Lead for this digital agency, I am responsible for:
           </p>
-          <ul class="list-disc ml-4">
+          <ul class="ml-4 list-disc">
             <li>
               Identifying skills gaps in the current team and addressing them by
               hiring new staff and mentoring existing team members
@@ -138,8 +138,8 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             alt="Red Badger logo"
           />
 
-          <h4 class="italic mb-1">Client projects:</h4>
-          <ul class="list-disc space-y-4 ml-4">
+          <h4 class="mb-1 italic">Client projects:</h4>
+          <ul class="ml-4 list-disc space-y-4">
             <li>
               <span class="font-bold">Levi’s</span>
               <ul class="ml-4 list-dash">
@@ -247,7 +247,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             alt="Entale logo"
           />
 
-          <ul class="list-disc ml-4">
+          <ul class="ml-4 list-disc">
             <li>
               Rapidly built upon the pre-existing prototype to create a high
               quality iOS podcast app and publishing platform.
@@ -318,7 +318,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             ].join(' ')}
           />
 
-          <ul class="list-disc ml-4">
+          <ul class="ml-4 list-disc">
             <li>
               Optimised sales on client websites through A/B testing and
               personalisation developed in Javascript using React and jQuery.
@@ -354,7 +354,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         >
           <CGILogo className={[logoBaseStyles, 'top-0 w-20'].join(' ')} />
 
-          <ul class="list-disc ml-4">
+          <ul class="ml-4 list-disc">
             <li>
               Raised money for charity in the Million Makers entrepreneurial
               competition.
@@ -404,7 +404,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
       </CVSection>
 
       <CVSection title="Other skills and interests">
-        <ul class="list-disc ml-4">
+        <ul class="ml-4 list-disc">
           <li>PADI-qualified open water scuba diver</li>
           <li>Music festivals</li>
           <li>Football</li>
