@@ -19,6 +19,7 @@ module.exports = {
         dash: "'– '",
       },
       animation: {
+        'fade-in': 'fade-in 3s ease calc(var(--fade-in-step) * 0.4s) both',
         sunrise: 'sunrise 3s ease 0.5s both',
         'face-bob-up-and-down':
           'face-bob-up-and-down 4s ease-in-out 3.5s infinite both',
@@ -28,6 +29,10 @@ module.exports = {
           'arrow-bob-right-and-left 1s ease-in-out 0.2s infinite both',
       },
       keyframes: {
+        'fade-in': {
+          '0%': { opacity: '0%' },
+          '100%': { opacity: '100%' },
+        },
         sunrise: {
           '0%': { transform: 'translateY(0)' },
           '100%': { transform: 'translateY(-50%)' },

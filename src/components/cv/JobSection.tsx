@@ -4,8 +4,9 @@ import { JobTitle } from './JobTitle'
 
 type Props = {
   company: string
-  children: ReactNode
   roles: ReadonlyArray<Role>
+  fadeInStep: number
+  children: ReactNode
 }
 
 type Role = {
@@ -14,8 +15,13 @@ type Role = {
   to: string
 }
 
-export const JobSection = ({ company, roles, children }: Props) => (
-  <section className="group relative mb-8">
+export const JobSection = ({ company, roles, fadeInStep, children }: Props) => (
+  <section
+    className="group relative mb-8 animate-fade-in"
+    style={{
+      '--fade-in-step': fadeInStep,
+    }}
+  >
     <CvH3 text={company} />
 
     <div className="pb-2">
