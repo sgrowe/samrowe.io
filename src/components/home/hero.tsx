@@ -4,7 +4,9 @@ type Props = {
 
 export const HomeHero = ({ imgUrl }: Props) => (
   <>
-    <div className="h-[50vh] bg-gradient-to-t from-sunsetOrange via-sunsetBlue to-sunsetBlue portrait:h-[40vh]" />
+    <div className="relative h-[50vh] portrait:h-[40vh]">
+      <div className="absolute left-0 right-0 top-0 h-[200%] bg-gradient-to-t from-sunsetOrange via-sunsetBlue via-25% to-sunsetBlue to-50% motion-safe:animate-sunrise" />
+    </div>
 
     <div className="relative min-h-[50vh] grow bg-gray-800 text-white portrait:min-h-[60vh]">
       {/* TODO: ^ grainy gradient effect? */}
@@ -20,21 +22,23 @@ export const HomeHero = ({ imgUrl }: Props) => (
 
       <img
         src={imgUrl}
-        className="absolute top-[-30vh] right-[5vw] h-[60vh] w-auto rounded-full shadow-2xl portrait:h-[90vw]"
+        className="absolute right-[5vw] top-[-30vh] h-[60vh] w-auto rounded-full shadow-2xl motion-safe:animate-face-bob-up-and-down portrait:h-[90vw]"
         alt="A picture of my face"
       />
 
       <div className="px-[10vw] pb-12">
         <p className="font-mono text-2xl">
           <a href="/cv" className="group">
-            View my{' '}
-            <abbr
-              className="tracking-wider no-underline"
-              title="Curriculum vitae"
-            >
-              CV
-            </abbr>{' '}
-            <span className="inline-block font-serif transition-transform duration-300 group-hover:translate-x-2">
+            <span className="group-hover:underline">
+              View my{' '}
+              <abbr
+                className="tracking-wider no-underline"
+                title="Curriculum vitae"
+              >
+                CV
+              </abbr>
+            </span>{' '}
+            <span className="inline-block animate-arrow-bob-right-and-left font-serif transition-transform duration-300 group-hover:animate-arrow-bob-right-and-left-fast">
               →
             </span>
           </a>
