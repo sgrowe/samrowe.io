@@ -39,9 +39,10 @@ const thoughts = await Promise.all(
 
       {
         thoughts.map((t) => (
-          <a id={t.slug} href={`#${t.slug}`} class="pt-4 group">
-            <section class="px-6 py-8 bg-slate-50 dark:bg-slate-800 rounded-xl border-2 border-transparent transition duration-500 group-target:border-slate-500 dark:group-target:border-slate-400">
-              <div class="prose prose-slate prose-lg dark:prose-invert">
+          <a id={t.slug} href={`#${t.slug}`} class="group pt-4">
+            <section class="rounded-xl border-2 border-transparent bg-slate-50 px-6 py-8 transition duration-500 group-target:border-slate-500 dark:bg-slate-800 dark:group-target:border-slate-400">
+              <h2 class="pb-4 font-bold dark:text-slate-400">{t.title}</h2>
+              <div class="prose prose-lg prose-slate dark:prose-invert">
                 <t.body.Content />
               </div>
             </section>
