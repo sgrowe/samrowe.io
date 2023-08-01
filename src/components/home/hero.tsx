@@ -44,6 +44,25 @@ export const HomeHero = ({ imgUrl }: Props) => (
           </a>
         </p>
       </div>
+
+      <WebsiteCarbonBadge />
     </div>
   </>
+)
+
+const WebsiteCarbonBadge = () => (
+  <div className="pt-48">
+    <div
+      id="wcb"
+      className="carbonbadge wcb-d"
+      style={{
+        '--b1': 'rgb(31, 41, 55)',
+        '--b2': 'white',
+      }}
+    />
+    <script
+      src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+      defer
+    />
+  </div>
 )
