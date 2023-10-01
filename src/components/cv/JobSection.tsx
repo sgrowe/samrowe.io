@@ -4,6 +4,7 @@ import { JobTitle } from './JobTitle'
 
 type Props = {
   company: string
+  companyLink: string
   roles: ReadonlyArray<Role>
   fadeInStep: number
   children: ReactNode
@@ -15,19 +16,27 @@ type Role = {
   to: string
 }
 
-export const JobSection = ({ company, roles, fadeInStep, children }: Props) => (
+export const JobSection = ({
+  company,
+  companyLink,
+  roles,
+  fadeInStep,
+  children,
+}: Props) => (
   <section
     className="group relative mb-8 animate-fade-in"
     style={{
       '--fade-in-step': fadeInStep,
     }}
   >
-    <CvH3 text={company} />
+    <div>
+      <CvH3 text={company} href={companyLink} />
 
-    <div className="pb-2">
-      {roles.map(({ title, from, to }, i) => (
-        <JobTitle key={i} title={title} from={from} to={to} />
-      ))}
+      <div className="pb-2">
+        {roles.map(({ title, from, to }, i) => (
+          <JobTitle key={i} title={title} from={from} to={to} />
+        ))}
+      </div>
     </div>
 
     {children}
