@@ -7,6 +7,17 @@ import '@fontsource/merriweather/700-italic.css'
 import '@fontsource/merriweather/700.css'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
+import { AWSLogo } from '../components/tech-logos/AWSLogo'
+import { ArgoCdLogo } from '../components/tech-logos/ArgoCdLogo'
+import { CLogo } from '../components/tech-logos/CLogo'
+import { CSharpLogo } from '../components/tech-logos/CSharpLogo'
+import { KubernetesLogo } from '../components/tech-logos/KubernetesLogo'
+import { PythonLogo } from '../components/tech-logos/PythonLogo'
+import { ReactLogo } from '../components/tech-logos/ReactLogo'
+import { RedisLogo } from '../components/tech-logos/RedisLogo'
+import { RustLogo } from '../components/tech-logos/RustLogo'
+import { TerraformLogo } from '../components/tech-logos/TerraformLogo'
+import { TypeScriptLogo } from '../components/tech-logos/TypeScriptLogo'
 import { CGILogo } from '../logos/CGI'
 import { Qubit } from '../logos/Qubit'
 import bathUni from '../logos/bath-uni.gif'
@@ -48,6 +59,14 @@ const logoBaseStyles =
         <JobSection
           company="Vitamin London"
           companyLink="https://www.multivitaminstudio.com"
+
+          techUsed={['Rust', 'Kubernetes', 'Argo CD', 'GitHub Actions', 'TypeScript']}
+          techLogos={[
+            RustLogo,
+            TypeScriptLogo,
+            TerraformLogo,
+            KubernetesLogo,ReactLogo
+          ]}
           roles={[
             {
               title: 'Tech Lead',
@@ -126,6 +145,22 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="Red Badger"
           companyLink='https://red-badger.com'
+          techUsed={[
+            'Rust',
+            'Kubernetes',
+            'Argo CD',
+            'GitHub Actions',
+            'TypeScript',
+          ]}
+          techLogos={[
+            RustLogo,
+            TypeScriptLogo,
+            TerraformLogo,
+            KubernetesLogo,
+            ArgoCdLogo,
+            ReactLogo,
+            RedisLogo
+          ]}
           roles={[
             {
               title: 'Senior Software Engineer',
@@ -239,6 +274,12 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="Entale"
           companyLink='https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/'
+          techLogos={[
+            ReactLogo,
+            AWSLogo,
+            RedisLogo,
+            PythonLogo,
+          ]}
           roles={[
             {
               title: 'Full Stack Engineer',
@@ -314,6 +355,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="Qubit"
           companyLink='https://www.coveo.com/en/qubit'
+          techLogos={[ReactLogo]}
           roles={[
             {
               title: 'Javascript Engineer',
@@ -357,6 +399,15 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="CGI Group"
           companyLink='https://www.cgi.com/en'
+          techLogos={[
+            CSharpLogo,
+            PythonLogo,
+          ]}
+          techUsed={[
+            'Python',
+            'C#',
+            'Angular JS',
+          ]}
           roles={[
             {
               title: 'Software Developer',
@@ -396,6 +447,14 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="University of Bath"
           companyLink='https://www.bath.ac.uk'
+          techUsed={[
+            'C',
+            'Python',
+          ]}
+          techLogos={[
+            CLogo,
+            PythonLogo,
+          ]}
           roles={[
             {
               title: 'BSc Physics, 2:1',
