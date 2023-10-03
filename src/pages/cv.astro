@@ -7,10 +7,15 @@ import '@fontsource/merriweather/700-italic.css'
 import '@fontsource/merriweather/700.css'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
+import { KeyTechnologies } from '../components/cv/KeyTechnologies'
 import { AWSLogo } from '../components/tech-logos/AWSLogo'
 import { ArgoCdLogo } from '../components/tech-logos/ArgoCdLogo'
 import { CLogo } from '../components/tech-logos/CLogo'
 import { CSharpLogo } from '../components/tech-logos/CSharpLogo'
+import { DockerLogo } from '../components/tech-logos/DockerLogo'
+import { DynamoDBLogo } from '../components/tech-logos/DynamoDBLogo'
+import { ElmLogo } from '../components/tech-logos/ElmLogo'
+import { GoogleCloudLogo } from '../components/tech-logos/GoogleCloudLogo'
 import { KubernetesLogo } from '../components/tech-logos/KubernetesLogo'
 import { PythonLogo } from '../components/tech-logos/PythonLogo'
 import { ReactLogo } from '../components/tech-logos/ReactLogo'
@@ -26,7 +31,7 @@ import redBadger from '../logos/rb.png'
 import vitamin from '../logos/vitamin.png'
 
 const logoBaseStyles =
-  'absolute hidden mx-8 right-full lg:block print:!hidden opacity-30 group-hover:opacity-100 transition-opacity group-hover:duration-700 duration-300'
+  'absolute hidden mx-8 right-full lg:block print:!hidden group-hover:opacity-100 transition-opacity group-hover:duration-700 duration-300 group-hover:grayscale-0'
 
 ---
 
@@ -47,25 +52,40 @@ const logoBaseStyles =
         </p>
       </div>
 
-      <CVSection title="Personal Summary" fadeInTitleStep={2}>
+      <CVSection title="About me" fadeInTitleStep={2}>
         <p class="animate-fade-in" style="--fade-in-step:3">
-          I am a friendly and enthusiastic software developer who enjoys
-          collaborating with others. I’m always keen to learn new skills and
+          I am a full stack developer who loves working in collaborative, cross-functional teams across the entire software development lifecycle. I’m always keen to learn new skills and
           adapt quickly to new challenges.
         </p>
       </CVSection>
+
+      <KeyTechnologies />
 
       <CVSection title="Employment history" fadeInTitleStep={4}>
         <JobSection
           company="Vitamin London"
           companyLink="https://www.multivitaminstudio.com"
-
-          techUsed={['Rust', 'Kubernetes', 'Argo CD', 'GitHub Actions', 'TypeScript']}
+          techUsed={[
+            'Rust',
+            'Kubernetes',
+            'Argo CD',
+            'GitHub Actions',
+            'TypeScript',
+            'MQTT',
+            'PostgreSQL',
+            'MySQL',
+            'Redis',
+            'FFmpeg',
+            'NGINX'
+          ]}
           techLogos={[
             RustLogo,
             TypeScriptLogo,
             TerraformLogo,
-            KubernetesLogo,ReactLogo
+            KubernetesLogo,
+            DockerLogo,
+            AWSLogo,
+            ReactLogo,
           ]}
           roles={[
             {
@@ -86,31 +106,35 @@ const logoBaseStyles =
             <img src={vitamin} alt="Vitamin London logo" />
           </div>
 
-          <p class="mb-2">
-            As the Tech Lead for this digital agency, my responsibilities included:
-          </p>
           <ul class="ml-4 list-disc">
             <li>
-              Identifying skills gaps in the current team and addressing them by
-              hiring new staff and mentoring existing team members
+              I identified current and future skills gaps in our team and addressed them by mentoring developers to
+              improve their skills and experience, and additionally worked with upper management to hire new team members
             </li>
             <li>
-              Working with developers, project managers and clients across many
+              Developed and deployed a complex platform for remotely controlling and live-streaming video from DJI drones.
+              This included trialling different combinations of video streaming technologies (HLS and HTTP-FLV) and server configurations to achieve the best possible latency and video quality in an economical way. The technology used for this platform included Kubernetes, Docker, Terraform, Redis, MySQL, WebSockets, MQTT, Nginx and FFmpeg.
+            </li>
+            <li>
+              Increased the autonomy of more junior developers by transitioning simpler projects from legacy Kubernetes clusters to PaaS (platform as a service) providers so they can deploy their own work at a much faster cadence than before.
+            </li>
+            <li>
+              Worked with developers, project managers and clients across many
               projects to ensure high quality work is delivered within agreed
               upon timescales
             </li>
             <li>
-              Gradually transitioning the team to tools and working practices
-              which improve our pace of development (such as Typescript,
+              Transitioned the team to tools and working practices
+              which improved our pace of development (such as Typescript,
               Tailwind CSS and an improved git workflow)
             </li>
             <li>
-              Working with the team to provide technical leadership on which
+              Worked with the team to provide technical leadership on which
               tools, hosting services and development practices we should use
               and standardise on
             </li>
             <li>
-              Deploying and monitoring a diverse mix of projects using AWS,
+              Deployed and monitored a diverse mix of projects using AWS,
               Kubernetes and Render.com
             </li>
 
@@ -149,17 +173,37 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             'Rust',
             'Kubernetes',
             'Argo CD',
+            'Terraform',
             'GitHub Actions',
+            'React',
             'TypeScript',
+            'GraphQL',
+            'PostgreSQL',
+            'Jenkins',
+            'Istio',
+            'Redis',
+            'AWS',
+            'Google Cloud',
+            'Azure',
           ]}
           techLogos={[
             RustLogo,
             TypeScriptLogo,
             TerraformLogo,
+            GoogleCloudLogo,
             KubernetesLogo,
             ArgoCdLogo,
             ReactLogo,
-            RedisLogo
+            RedisLogo,
+            DockerLogo,
+            // TODO:
+            // GCP
+            // Azure
+            // AWS
+            // GraphQL
+            // Postgres
+            // Jenkins
+            // Java
           ]}
           roles={[
             {
@@ -277,8 +321,29 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
           techLogos={[
             ReactLogo,
             AWSLogo,
+            DynamoDBLogo,
+            DockerLogo,
             RedisLogo,
+            TerraformLogo,
             PythonLogo,
+            ElmLogo,
+            // TODO:
+            // elasticsearch
+            // circle CI?
+            // flow?
+          ]}
+          techUsed={[
+            'React',
+            'React Native',
+            'ElasticSearch',
+            'Flow',
+            'Terraform',
+            'AWS',
+            'DynamoDB',
+            'Redis',
+            'Circle CI',
+            'Python',
+            'REST API',
           ]}
           roles={[
             {
@@ -355,7 +420,16 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
         <JobSection
           company="Qubit"
           companyLink='https://www.coveo.com/en/qubit'
-          techLogos={[ReactLogo]}
+          techLogos={[
+            ReactLogo,
+            ElmLogo,
+          ]}
+          techUsed={[
+            'React',
+            'jQuery',
+            'Flow',
+            'CSS',
+          ]}
           roles={[
             {
               title: 'Javascript Engineer',
@@ -404,9 +478,11 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             PythonLogo,
           ]}
           techUsed={[
-            'Python',
             'C#',
+            'Python',
             'Angular JS',
+            'HTML',
+            'CSS',
           ]}
           roles={[
             {
@@ -421,10 +497,6 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
 
           <ul class="ml-4 list-disc">
             <li>
-              Raised money for charity in the Million Makers entrepreneurial
-              competition.
-            </li>
-            <li>
               Developed both the server-side and front-end code of the ePayfact2
               payroll system which serves many commercial and public sector
               clients.
@@ -438,6 +510,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
               Developed an insurance message processing web service written in
               Python, deployed it on Azure, and created a UI in Angular JS which
               consumed the web service’s api.
+            </li>
+            <li>
+              Raised money for The Prince’s Trust as part of a team in the Million Makers competition.
             </li>
           </ul>
         </JobSection>
@@ -464,7 +539,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
           ]}
           fadeInStep={10}
         >
-          {/* for some reason this image is smaller as a gif than a png */}
+          {/* for some reason this image has a smaller file size as a gif than a png */}
           <img
             class:list={[logoBaseStyles, '-top-1 w-40 xl:w-[12.5rem]']}
             src={bathUni}

@@ -19,6 +19,7 @@ module.exports = {
         dash: "'– '",
       },
       animation: {
+        // 'fade-in': 'fade-in 0s ease calc(var(--fade-in-step) * 0s) both',
         'fade-in': 'fade-in 3s ease calc(var(--fade-in-step) * 0.4s) both',
         sunrise: 'sunrise 3s ease 0.5s both',
         'face-bob-up-and-down':
