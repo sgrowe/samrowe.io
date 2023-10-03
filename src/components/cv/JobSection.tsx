@@ -45,7 +45,6 @@ export const JobSection = ({
         </div>
       </div>
 
-      {/* <div className="mb-4 grid grid-cols-[repeat(auto-fill,_3rem)] transition-[opacity,_filter] duration-300 group-hover:opacity-100 group-hover:grayscale-0 group-hover:duration-700"> */}
       <div className="mb-4 flex flex-row flex-wrap justify-end">
         {techLogos?.map((T, i) => (
           <div className="h-12 w-12" key={i}>
