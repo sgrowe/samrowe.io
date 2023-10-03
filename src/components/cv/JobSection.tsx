@@ -34,7 +34,7 @@ export const JobSection = ({
       '--fade-in-step': fadeInStep,
     }}
   >
-    <div className="grid grid-cols-2">
+    <div className="grid grid-cols-[minmax(min-content,max-content)_minmax(min-content,1fr)] gap-x-12">
       <div>
         <CvH3 text={company} href={companyLink} />
 
