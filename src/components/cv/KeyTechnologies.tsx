@@ -8,9 +8,22 @@ import { RustLogo } from '../tech-logos/RustLogo'
 import { TypeScriptLogo } from '../tech-logos/TypeScriptLogo'
 import { CVSection } from './CVSection'
 
-export const KeyTechnologies = () => (
-  <CVSection title="Key technologies and skills" fadeInTitleStep={4}>
-    <div className="grid grid-cols-2 gap-4">
+type Props = {
+  fadeInTitleStep: number
+  fadeInBodyStep: number
+}
+
+export const KeyTechnologies = ({ fadeInTitleStep, fadeInBodyStep }: Props) => (
+  <CVSection
+    title="Key technologies and skills"
+    fadeInTitleStep={fadeInTitleStep}
+  >
+    <div
+      className="grid animate-fade-in grid-cols-2 gap-4"
+      style={{
+        '--fade-in-step': fadeInBodyStep,
+      }}
+    >
       <Tech name="Rust" logo={RustLogo} />
       <Tech name="React" logo={ReactLogo} />
       <Tech name="TypeScript" logo={TypeScriptLogo} />
