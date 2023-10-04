@@ -13,8 +13,6 @@ import { slugify } from '../utils/slugify'
 const venuesRaw: readonly Omit<Venue, 'slug'>[] = [
   {
     name: 'Pret',
-    notes:
-      'No guarantees anything is gluten-free — risk of cross-contamination',
     foods: [
       {
         name: 'Smoked Salmon Protein Box',
@@ -139,7 +137,7 @@ const venuesRaw: readonly Omit<Venue, 'slug'>[] = [
   },
 ]
 
-const venues = venuesRaw.map((v) => ({
+const venues: ReadonlyArray<Venue> = venuesRaw.map((v) => ({
   slug: slugify(v.name),
   ...v,
 }))
