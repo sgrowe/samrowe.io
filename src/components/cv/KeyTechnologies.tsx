@@ -25,8 +25,8 @@ export const KeyTechnologies = ({ fadeInTitleStep, fadeInBodyStep }: Props) => (
       }}
     >
       <Tech name="Rust" logo={RustLogo} />
-      <Tech name="React" logo={ReactLogo} />
       <Tech name="Kubernetes" logo={KubernetesLogo} />
+      <Tech name="React" logo={ReactLogo} />
       <Tech name="TypeScript" logo={TypeScriptLogo} />
       <Tech name="SQL" logo={PostgresLogo} />
       <Tech name="GraphQL" logo={GraphQLLogo} />

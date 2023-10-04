@@ -1,8 +1,10 @@
+import type { ImageMetadata } from 'astro'
+
 type Props = {
-  imgUrl: string
+  img: ImageMetadata
 }
 
-export const HomeHero = ({ imgUrl }: Props) => (
+export const HomeHero = ({ img }: Props) => (
   <>
     <div className="relative h-[50vh] portrait:h-[40vh]">
       <div className="absolute left-0 right-0 top-0 h-[200%] bg-gradient-to-t from-sunsetOrange via-sunsetBlue via-25% to-sunsetBlue to-50% motion-safe:animate-sunrise" />
@@ -21,7 +23,7 @@ export const HomeHero = ({ imgUrl }: Props) => (
       </div>
 
       <img
-        src={imgUrl}
+        src={img.src}
         className="absolute right-[5vw] top-[-30vh] h-[60vh] w-auto rounded-full shadow-2xl motion-safe:animate-face-bob-up-and-down portrait:h-[90vw]"
         alt="A picture of my face"
       />

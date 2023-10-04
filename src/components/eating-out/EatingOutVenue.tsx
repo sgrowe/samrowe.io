@@ -1,4 +1,4 @@
-import { Food, FoodSummary } from './FoodSummary'
+import { FoodSummary, type Food } from './FoodSummary'
 
 type Props = {
   venue: Venue
