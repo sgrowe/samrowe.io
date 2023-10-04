@@ -1,4 +1,4 @@
-import { Line, LineChart, Tooltip, TooltipProps, XAxis, YAxis } from 'recharts'
+import { Line, LineChart, Tooltip, XAxis, YAxis, type TooltipProps } from 'recharts'
 import { cls } from '../utils/cls'
 import { useIsClientSide } from '../utils/useIsClientSide'
 
