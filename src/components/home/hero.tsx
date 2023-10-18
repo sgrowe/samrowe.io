@@ -53,7 +53,7 @@ export const HomeHero = ({ img }: Props) => (
 )
 
 const WebsiteCarbonBadge = () => (
-  <div className="pt-48">
+  <div className="pb-4 pt-48">
     <div
       id="wcb"
       className="carbonbadge wcb-d"
