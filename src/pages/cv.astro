@@ -5,6 +5,7 @@ import '@fontsource/merriweather/400-italic.css'
 import '@fontsource/merriweather/400.css'
 import '@fontsource/merriweather/700-italic.css'
 import '@fontsource/merriweather/700.css'
+import { CVLink as Link } from '../components/cv/CVLink'
 import { CVSection } from '../components/cv/CVSection'
 import { JobSection } from '../components/cv/JobSection'
 import { KeyTechnologies } from '../components/cv/KeyTechnologies'
@@ -116,8 +117,11 @@ const logoBaseStyles =
               improve their skills and experience, and additionally worked with upper management to hire new team members
             </li>
             <li>
-              Developed and deployed a complex platform for remotely controlling and live-streaming video from DJI drones.
-              This included trialling different combinations of video streaming technologies (HLS and HTTP-FLV) and server configurations to achieve the best possible latency and video quality in an economical way. The technology used for this platform included Kubernetes, Docker, Terraform, Redis, MySQL, WebSockets, MQTT, Nginx and FFmpeg.
+              Led a team to develop from scratch a job and events platform for military veterans. We were able to ship this project in just a few months, and it is is accessbile at <Link href="https://www.troopr.co.uk/">Troopr.co.uk</Link>. This project was built using Next.js, Typescript, Postgres and integrated with Stripe for secure payments.
+            </li>
+            <li>
+              Developed and deployed a complex platform for remotely controlling and live-streaming video from DJI drones for <Link href="https://skyboundrescuerproject.com/">Skybound Rescuer</Link>.
+              This included exploration and testing of different combinations of video streaming technologies (HLS and HTTP-FLV) and server configurations to achieve the best possible latency and video quality in an economical way. The technology used for this platform included Kubernetes, Docker, Terraform, Redis, MySQL, WebSockets, MQTT, Nginx and FFmpeg.
             </li>
             <li>
               Increased the autonomy of more junior developers by transitioning simpler projects from legacy Kubernetes clusters to PaaS (platform as a service) providers so they can deploy their own work at a much faster cadence than before.
