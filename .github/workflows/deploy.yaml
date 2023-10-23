@@ -37,7 +37,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
+      - name: Build
+        if: github.ref != 'refs/heads/main'
+        run: pnpm run deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          PARKRUN_ATHLETE_ID: ${{ secrets.PARKRUN_ATHLETE_ID }}
+          PARKRUN_USERNAME: ${{ secrets.PARKRUN_USERNAME }}
+          PARKRUN_PASSWORD: ${{ secrets.PARKRUN_PASSWORD }}
+
       - name: Deploy
+        if: github.ref == 'refs/heads/main'
         run: pnpm run deploy
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
