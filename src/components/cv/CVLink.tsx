@@ -6,7 +6,7 @@ type Props = {
 }
 
 export const CVLink = ({ href, children }: Props) => (
-  <a className="text-blue-600 hover:underline" href={href}>
+  <a className="text-blue-500 hover:underline" href={href}>
     {children}
   </a>
 )

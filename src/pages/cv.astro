@@ -35,9 +35,7 @@ import entale from '../logos/entale.png'
 import redBadger from '../logos/rb.png'
 import vitamin from '../logos/vitamin.png'
 
-const logoBaseStyles =
-  'absolute hidden mx-8 right-full lg:block print:!hidden'
-
+const logoBaseStyles = 'absolute hidden mx-8 right-full lg:block print:!hidden'
 ---
 
 <html lang="en-GB" class="font-serif">
@@ -59,8 +57,10 @@ const logoBaseStyles =
 
       <CVSection title="About me" fadeInTitleStep={2}>
         <p class="animate-fade-in" style="--fade-in-step:3">
-          I am a full stack developer who loves working in collaborative, cross-functional teams across the entire software development lifecycle. I’m always keen to learn new skills and
-          adapt quickly to new challenges.
+          I am a full stack developer who loves working in collaborative,
+          cross-functional teams across the entire software development
+          lifecycle. I’m always keen to learn new skills and adapt quickly to
+          new challenges.
         </p>
       </CVSection>
 
@@ -82,7 +82,7 @@ const logoBaseStyles =
             'MySQL',
             'Redis',
             'FFmpeg',
-            'NGINX'
+            'NGINX',
           ]}
           techLogos={[
             RustLogo,
@@ -114,27 +114,82 @@ const logoBaseStyles =
 
           <ul class="ml-4 list-disc">
             <li>
-              I proactively identified current and future skills gaps in our team and addressed them by mentoring developers to
-              improve their skills and experience, and additionally worked with upper management to hire new team members.
+              Developed and deployed a sophisticated platform for remotely
+              controlling and live-streaming video from DJI drones for <Link
+                href="https://skyboundrescuerproject.com/"
+              >
+                Skybound Rescuer
+              </Link>. This included exploration and testing of different
+              combinations of video streaming technologies (such as HLS and
+              HTTP-FLV) and server configurations to achieve the best possible
+              latency and video quality in an economical way. The technology
+              used for this complex platform included Kubernetes, Docker,
+              Terraform, Redis, MySQL, WebSockets, MQTT, Nginx and FFmpeg.
             </li>
             <li>
-              Developed and deployed a sophisticated platform for remotely controlling and live-streaming video from DJI drones for <Link href="https://skyboundrescuerproject.com/">Skybound Rescuer</Link>.
-              This included exploration and testing of different combinations of video streaming technologies (such as HLS and HTTP-FLV) and server configurations to achieve the best possible latency and video quality in an economical way. The technology used for this complex platform included Kubernetes, Docker, Terraform, Redis, MySQL, WebSockets, MQTT, Nginx and FFmpeg.
+              Led a team to develop from scratch a career and events platform
+              for military veterans. We were able to ship this project in just a
+              few months and it is currently accessbile at <Link
+                href="https://www.troopr.co.uk/"
+              >
+                Troopr.co.uk
+              </Link>. This platform was created using Next.js, Typescript,
+              Postgres and integrated with Stripe for secure payments.
             </li>
             <li>
-              Led a team to develop from scratch a career and events platform for military veterans. We were able to ship this project in just a few months and it is currently accessbile at <Link href="https://www.troopr.co.uk/">Troopr.co.uk</Link>. This platform was created using Next.js, Typescript, Postgres and integrated with Stripe for secure payments.
+              Resolved major performance issues with <Link
+                href="https://theracingmanager.com/"
+              >
+                The Racing Manager’s
+              </Link> website and React Native mobile apps through a combination
+              of profiling, improving SQL queries to fetch data in batches and
+              avoid the <Link
+                href="https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries/"
+              >
+                N+1 query problem
+              </Link>, GraphQL query improvements, and caching. This massively
+              improved the user experience for large teams on key screens from
+              several minutes of load time to under 10-15 seconds.
             </li>
             <li>
-              Resolved major performance issues with <Link href='https://theracingmanager.com/'>The Racing Manager’s</Link> website and React Native mobile apps through a combination of profiling, improving SQL queries to fetch data in batches and avoid the <Link href='https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries/'>N+1 query problem</Link>, GraphQL query improvements, and caching. This massively improved the user experience for large teams on key screens from several minutes of load time to under 10-15 seconds.
+              Provided technical leadership for <Link
+                href="https://theracingmanager.com/"
+              >
+                The Racing Manager
+              </Link> on a roadmap for developing the next major iteration of
+              the platform to help open it up to a wider audience. This was
+              simultaneously balanced with necessary improvements and fixes to
+              the existing platform.
             </li>
             <li>
-              Provided technical leadership for <Link href='https://theracingmanager.com/'>The Racing Manager</Link> on a roadmap for developing the next major iteration of the platform to help open it up to a wider audience. This was simultaneously balanced with necessary improvements and fixes to the existing platform.
+              Led the development of multiple sites for <Link
+                href="https://silverrailtech.com/"
+              >
+                SilverRail
+              </Link> (such as <Link
+                href="https://trainoverplane.silverrailtech.com/"
+              >
+                Train over Plane
+              </Link>) and the successful migration of their existing Wordpress
+              website to a much more reliable React-based site using Sanity CMS
+              as the backend. This helped dramatically improve site reliability,
+              lowered maintenance costs and improved the authoring experience
+              for new site content.
             </li>
             <li>
-              Led the development of multiple sites for <Link href="https://silverrailtech.com/">SilverRail</Link> (such as <Link href='https://trainoverplane.silverrailtech.com/'>Train over Plane</Link>) and the successful migration of their existing Wordpress website to a much more reliable React-based site using Sanity CMS as the backend. This helped dramatically improve site reliability, lowered maintenance costs and improved the authoring experience for new site content.
+              Oversaw the integration of Freshsales CRM and Mews hospitality
+              management system for <Link
+                href="https://dev-fe.desertspringsresort.es"
+              >
+                Desert Springs
+              </Link> to improve and simplify their existing business processes.
+              This integration was built using TypeScript and AWS DynamoDB.
             </li>
             <li>
-              Oversaw the integration of Freshsales CRM and Mews hospitality management system for <Link href="https://dev-fe.desertspringsresort.es">Desert Springs</Link> to improve and simplify their existing business processes. This integration was built using TypeScript and AWS DynamoDB.
+              I proactively identified current and future skills gaps in our
+              team and addressed them by mentoring developers to improve their
+              skills and experience, and additionally worked with upper
+              management to hire new team members.
             </li>
             <!-- <li>
               Increased the autonomy of more junior developers by transitioning simpler projects from legacy Kubernetes clusters to PaaS (platform as a service) providers so they can deploy their own work at a much faster cadence than before.
@@ -184,7 +239,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
 
         <JobSection
           company="Red Badger"
-          companyLink='https://red-badger.com'
+          companyLink="https://red-badger.com"
           techUsed={[
             'Rust',
             'Kubernetes',
@@ -310,11 +365,11 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
                   Kubernetes with Istio as the service mesh, ArgoCD for
                   continuous deployment and Terraform for provisioning
                   infrastructure. The code for this project is open source and
-                  available at <a
-                    class="text-blue-500 hover:underline"
+                  available at <Link
                     href="https://github.com/MHRA/products/pulls?q=is:pr+author:sgrowe+sort:created-asc"
-                    >github.com/MHRA/products</a
                   >
+                    github.com/MHRA/products
+                  </Link>
                 </li>
                 <li>
                   Set up monitoring and alerting using Prometheus and Azure
@@ -331,7 +386,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
 
         <JobSection
           company="Entale"
-          companyLink='https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/'
+          companyLink="https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/"
           techLogos={[
             ReactLogo,
             AWSLogo,
@@ -399,11 +454,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             </li>
             <li>
               Delivered a talk at elm-conf titled “Complex animations done well”
-              (available at <a
-                class="text-blue-500 hover:underline"
-                href="https://youtu.be/DBVHxkMBfF4"
-                >https://youtu.be/DBVHxkMBfF4</a
-              >).
+              (available at <Link href="https://youtu.be/DBVHxkMBfF4">
+                https://youtu.be/DBVHxkMBfF4
+              </Link>).
             </li>
             <li>
               Engaged in regular retrospectives to improve our product
@@ -419,8 +472,8 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
             </li>
             <li>
               Debugged and fixed production outages and various issues ranging
-              from DynamoDB throttling to <span class="lining-nums">EC2</span> instances
-              reaching CPU limits.
+              from DynamoDB throttling to <span class="lining-nums">EC2</span>
+               instances reaching CPU limits.
             </li>
             <li>
               Created a service to scrape the entire iTunes podcast directory &
@@ -431,17 +484,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
 
         <JobSection
           company="Qubit"
-          companyLink='https://www.coveo.com/en/qubit'
-          techLogos={[
-            ReactLogo,
-            ElmLogo,
-          ]}
-          techUsed={[
-            'React',
-            'jQuery',
-            'Flow',
-            'CSS',
-          ]}
+          companyLink="https://www.coveo.com/en/qubit"
+          techLogos={[ReactLogo, ElmLogo]}
+          techUsed={['React', 'jQuery', 'Flow', 'CSS']}
           roles={[
             {
               title: 'Javascript Engineer',
@@ -484,18 +529,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
 
         <JobSection
           company="CGI Group"
-          companyLink='https://www.cgi.com/en'
-          techLogos={[
-            CSharpLogo,
-            PythonLogo,
-          ]}
-          techUsed={[
-            'C#',
-            'Python',
-            'Angular JS',
-            'HTML',
-            'CSS',
-          ]}
+          companyLink="https://www.cgi.com/en"
+          techLogos={[CSharpLogo, PythonLogo]}
+          techUsed={['C#', 'Python', 'Angular JS', 'HTML', 'CSS']}
           roles={[
             {
               title: 'Software Developer',
@@ -524,7 +560,8 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
               consumed the web service’s api.
             </li>
             <li>
-              Raised money for The Prince’s Trust as part of a team in the Million Makers competition.
+              Raised money for The Prince’s Trust as part of a team in the
+              Million Makers competition.
             </li>
           </ul>
         </JobSection>
@@ -533,15 +570,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
       <CVSection title="Education">
         <JobSection
           company="University of Bath"
-          companyLink='https://www.bath.ac.uk'
-          techUsed={[
-            'C',
-            'Python',
-          ]}
-          techLogos={[
-            CLogo,
-            PythonLogo,
-          ]}
+          companyLink="https://www.bath.ac.uk"
+          techUsed={['C', 'Python']}
+          techLogos={[CLogo, PythonLogo]}
           roles={[
             {
               title: 'BSc Physics, 2:1',
@@ -551,7 +582,9 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
           ]}
           fadeInStep={10}
         >
-          {/* for some reason this image has a smaller file size as a gif than a png */}
+          {
+            /* for some reason this image has a smaller file size as a gif than a png */
+          }
           <img
             class:list={[logoBaseStyles, '-top-1 w-40 xl:w-[12.5rem]']}
             src={bathUni.src}
@@ -559,9 +592,7 @@ Overall, my experience as a Tech Lead has been focused on driving innovation, im
           />
 
           <ul class="ml-4 list-disc">
-            <li>
-              I completed a module on low-level programming in C.
-            </li>
+            <li>I completed a module on low-level programming in C.</li>
             <li>
               As part of my final year project supervised by BAE Systems, I
               created optical simulations written in Python.
