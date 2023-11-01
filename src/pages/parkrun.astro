@@ -2,7 +2,10 @@
 import '@fontsource/ibm-plex-mono/400.css'
 import '@fontsource/ibm-plex-mono/500.css'
 import { DateTime } from 'luxon'
-import { ParkrunLineChart, type Props as ParkrunLineChartProps } from '../components/ParkrunLineChart'
+import {
+  ParkrunLineChart,
+  type Props as ParkrunLineChartProps,
+} from '../components/ParkrunLineChart'
 import { eventsLoader } from '../parkrun/events'
 import { fetchParkrunResults } from '../parkrun/results'
 import { range } from '../utils/range'
@@ -31,7 +34,7 @@ const parkrunData: ParkrunLineChartProps['data'] = await Promise.all(
     }))
     .filter(
       ({ epochTimeSecs }) =>
-        DateTime.fromSeconds(epochTimeSecs).year >= startYear
+        DateTime.fromSeconds(epochTimeSecs).year >= startYear,
     )
     .map(async ({ EventNumber, ...data }) => ({
       eventName: (await eventsLoader.load(EventNumber)).EventShortName,
@@ -39,7 +42,7 @@ const parkrunData: ParkrunLineChartProps['data'] = await Promise.all(
         .setLocale('en-GB')
         .toLocaleString(),
       ...data,
-    }))
+    })),
 )
 
 const currentYear = DateTime.now().year

@@ -7,13 +7,11 @@ import '@fontsource/merriweather/700.css'
 import { getCollection } from 'astro:content'
 
 const thoughts = await Promise.all(
-  (
-    await getCollection('thoughts')
-  ).map(async (t) => ({
+  (await getCollection('thoughts')).map(async (t) => ({
     title: t.data.title,
     slug: t.slug,
     body: await t.render(),
-  }))
+  })),
 )
 ---
 
