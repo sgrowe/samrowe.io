@@ -10,7 +10,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^7.6.1",
+    "@astrojs/cloudflare": "^7.6.3",
     "@astrojs/mdx": "^1.1.2",
     "@astrojs/react": "^3.0.3",
     "@astrojs/tailwind": "^5.0.2",
