@@ -39,7 +39,7 @@ jobs:
 
       - name: Build
         if: github.ref != 'refs/heads/main'
-        run: pnpm run deploy
+        run: pnpm run build
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           PARKRUN_ATHLETE_ID: ${{ secrets.PARKRUN_ATHLETE_ID }}
