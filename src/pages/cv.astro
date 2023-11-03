@@ -36,9 +36,15 @@ import redBadger from '../logos/rb.png'
 import vitamin from '../logos/vitamin.png'
 
 const logoBaseStyles = 'absolute hidden mx-8 right-full lg:block print:!hidden'
+
+const fadeInDelay = Astro.url.searchParams.get('fadeInDelay')
+
+const htmlProps = fadeInDelay
+  ? { style: `--fade-in-delay: ${fadeInDelay}` }
+  : {}
 ---
 
-<html lang="en-GB" class="font-serif">
+<html lang="en-GB" class="font-serif" {...htmlProps}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
