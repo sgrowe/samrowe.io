@@ -1,12 +1,10 @@
-import type { ReactNode } from 'react'
-
 type Props = {
   href: string
-  children: ReactNode
+  text: string
 }
 
-export const CVLink = ({ href, children }: Props) => (
+export const CVLink = ({ href, text }: Props) => (
   <a className="text-blue-500 hover:underline" href={href}>
-    {children}
+    {text}
   </a>
 )
