@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/cloudflare':
-    specifier: ^7.6.3
-    version: 7.6.3(astro@3.4.3)
+    specifier: ^8.1.0
+    version: 8.1.0(astro@3.4.3)
   '@astrojs/mdx':
     specifier: ^1.1.3
     version: 1.1.3(astro@3.4.3)
@@ -94,10 +94,10 @@ packages:
       '@jridgewell/trace-mapping': 0.3.20
     dev: false
 
-  /@astrojs/cloudflare@7.6.3(astro@3.4.3):
-    resolution: {integrity: sha512-X3Va4AIuQhoaVDaI5YxV1JMTPoNHVw6bGVpXqnT8byh0RTLfpjJPg8UdkdK57YW5Ow/73QqwvbJNZUVQlO6n+Q==}
+  /@astrojs/cloudflare@8.1.0(astro@3.4.3):
+    resolution: {integrity: sha512-RSkthOcw1/ZAA9PhSX9LEWRvbyLJ/vTJCv8nJ4LxBqMlR5j7Lt6LnQP0hI/LAlDHgnG1Hc4Hd7tB2SF85OivJw==}
     peerDependencies:
-      astro: ^3.3.0
+      astro: ^3.0.0 || ^4.0.0
     dependencies:
       '@astrojs/underscore-redirects': 0.3.3
       '@cloudflare/workers-types': 4.20231025.0
@@ -106,19 +106,11 @@ packages:
       dotenv: 16.3.1
       esbuild: 0.19.5
       find-up: 6.3.0
-      miniflare: 3.20231010.0
+      miniflare: 3.20231030.2
       tiny-glob: 0.2.9
-      vite: 4.5.0
     transitivePeerDependencies:
-      - '@types/node'
       - bufferutil
-      - less
-      - lightningcss
-      - sass
-      - stylus
-      - sugarss
       - supports-color
-      - terser
       - utf-8-validate
     dev: false
 
@@ -501,31 +493,12 @@ packages:
       mime: 3.0.0
     dev: true
 
-  /@cloudflare/workerd-darwin-64@1.20231010.0:
-    resolution: {integrity: sha512-LM9ePAh88EGoQkYisAfdLMEDzcaMinRer0mY11GOiN4A9ZU+6APRVvhh5JBRzI0F6Dkb8nHtrzhisioWCRaY1w==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
-    optional: true
-
   /@cloudflare/workerd-darwin-64@1.20231030.0:
     resolution: {integrity: sha512-J4PQ9utPxLya9yHdMMx3AZeC5M/6FxcoYw6jo9jbDDFTy+a4Gslqf4Im9We3aeOEdPXa3tgQHVQOSelJSZLhIw==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-darwin-arm64@1.20231010.0:
-    resolution: {integrity: sha512-Vr7Z1O+vJRCnVeWaF0YSv0EMHiMRY7yYCxr7O509FzvJAXsZuXZ7DYC5TAD7a8HSeeqsxFTAbF9jg0y9A2wKVw==}
-    engines: {node: '>=16'}
-    cpu: [arm64]
-    os: [darwin]
-    requiresBuild: true
-    dev: false
     optional: true
 
   /@cloudflare/workerd-darwin-arm64@1.20231030.0:
@@ -534,16 +507,6 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-linux-64@1.20231010.0:
-    resolution: {integrity: sha512-l9oDVPVhPEOHr1JpcGnLSsIf1h8sZnvcIC2Tl1zt+3p/KGFyGqGyAZJMLUoMJ54Q07oRE1x3KAu+JcWWEvdxpg==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
     optional: true
 
   /@cloudflare/workerd-linux-64@1.20231030.0:
@@ -552,16 +515,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-linux-arm64@1.20231010.0:
-    resolution: {integrity: sha512-NBmYsJu+ns2W8WHcDnglfqLV5O3FP7lXpoTSTvpM64mhexmemdMlOJX5gpRuarTula3fA+GzEehinUojwM9/1g==}
-    engines: {node: '>=16'}
-    cpu: [arm64]
-    os: [linux]
-    requiresBuild: true
-    dev: false
     optional: true
 
   /@cloudflare/workerd-linux-arm64@1.20231030.0:
@@ -570,16 +523,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: true
-    optional: true
-
-  /@cloudflare/workerd-windows-64@1.20231010.0:
-    resolution: {integrity: sha512-jWiG71Rvuh4FYdEpOP1+BAygdguTlMYYy+v5d4ZOjxDkl+V8aR86EEtDQrv/QLUJFbpcoEX25SxXnN5UMKtjhQ==}
-    engines: {node: '>=16'}
-    cpu: [x64]
-    os: [win32]
-    requiresBuild: true
-    dev: false
     optional: true
 
   /@cloudflare/workerd-windows-64@1.20231030.0:
@@ -588,7 +531,6 @@ packages:
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: true
     optional: true
 
   /@cloudflare/workers-types@4.20231025.0:
@@ -3699,28 +3641,6 @@ packages:
     dev: false
     optional: true
 
-  /miniflare@3.20231010.0:
-    resolution: {integrity: sha512-VETY+/OhJ1RN+yrFpPUqBZysb2R8wXvyx3vzaRZS2qO1aGNKeGASa/vxCvNcBF+gt8UdbWMOalSXX8zY0IgWZA==}
-    engines: {node: '>=16.13'}
-    dependencies:
-      acorn: 8.11.2
-      acorn-walk: 8.3.0
-      capnp-ts: 0.7.0
-      exit-hook: 2.2.1
-      glob-to-regexp: 0.4.1
-      source-map-support: 0.5.21
-      stoppable: 1.1.0
-      undici: 5.27.0
-      workerd: 1.20231010.0
-      ws: 8.14.2
-      youch: 3.3.2
-      zod: 3.22.4
-    transitivePeerDependencies:
-      - bufferutil
-      - supports-color
-      - utf-8-validate
-    dev: false
-
   /miniflare@3.20231030.2:
     resolution: {integrity: sha512-+DYdMqWlUaY4wBylIjewNu8OVsPFquYjQkxoSb2jGIMBmlKaef65Hn2Bu8sub5tQzQ8tLO0FRklmD2Upx0HCCQ==}
     engines: {node: '>=16.13'}
@@ -3742,7 +3662,6 @@ packages:
       - bufferutil
       - supports-color
       - utf-8-validate
-    dev: true
 
   /minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -5330,19 +5249,6 @@ packages:
       string-width: 5.1.2
     dev: false
 
-  /workerd@1.20231010.0:
-    resolution: {integrity: sha512-ghxfBU8fBSBDa8fCBPfzWivYsWpewYftgy70N308C+acQ5AaKNM1QTdkQNm9YWeC5Jpl1YvBX04ojt7lCc3juw==}
-    engines: {node: '>=16'}
-    hasBin: true
-    requiresBuild: true
-    optionalDependencies:
-      '@cloudflare/workerd-darwin-64': 1.20231010.0
-      '@cloudflare/workerd-darwin-arm64': 1.20231010.0
-      '@cloudflare/workerd-linux-64': 1.20231010.0
-      '@cloudflare/workerd-linux-arm64': 1.20231010.0
-      '@cloudflare/workerd-windows-64': 1.20231010.0
-    dev: false
-
   /workerd@1.20231030.0:
     resolution: {integrity: sha512-+FSW+d31f8RrjHanFf/R9A+Z0csf3OtsvzdPmAKuwuZm/5HrBv83cvG9fFeTxl7/nI6irUUXIRF9xcj/NomQzQ==}
     engines: {node: '>=16'}
@@ -5354,7 +5260,6 @@ packages:
       '@cloudflare/workerd-linux-64': 1.20231030.0
       '@cloudflare/workerd-linux-arm64': 1.20231030.0
       '@cloudflare/workerd-windows-64': 1.20231030.0
-    dev: true
 
   /wrangler@3.18.0:
     resolution: {integrity: sha512-3UrmldsD84JDBa7HRZ5ACFr1nH+ZZs+Hth37Iv/mAaW2DiQOGcrevKwn4dofmTQO2qYP01u1vtfVJxLM0mq+1w==}
