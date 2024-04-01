@@ -13,7 +13,7 @@
     "@astrojs/cloudflare": "^8.1.0",
     "@astrojs/mdx": "^1.1.5",
     "@astrojs/react": "^3.0.10",
-    "@astrojs/tailwind": "^5.0.2",
+    "@astrojs/tailwind": "^5.1.0",
     "@fontsource/ibm-plex-mono": "^5.0.8",
     "@fontsource/merriweather": "^5.0.8",
     "@fontsource/permanent-marker": "^5.0.8",
