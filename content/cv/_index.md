@@ -24,6 +24,15 @@ I’m a full stack developer with a wide variety of experience with many differe
 
 ## Employment history
 
+Senior Software Engineer | Slice Mobile Project
+Contractor via Planes Studio | London, UK
+Key Contributions:
+
+- Led development of a React Native mobile application for Slice, the UK's first eSIM-only mobile network, enabling users to sign up, manage plans, purchase data add-ons, and install eSIMs
+- Developed a robust GraphQL API server using Node.js, creating a unified interface for multiple microservices supporting network operations
+- Constructed the marketing website using React and Next.js, integrating Dato CMS for client-side content customization
+- Stepped up as Acting Tech Lead during the primary Tech Lead's absence, managing app deployments and resolving critical production issues
+
 Vitamin London
 
 Tech Lead
