@@ -16,8 +16,10 @@
   <body
     class="bg-gradient-to-br from-gray-100 via-white to-gray-100 min-h-screen flex md:items-center justify-center md:p-4"
   >
+    {% set image = resize_image(path='home-page-background.png', width=1474,
+    height=1228, fit='fill') %}
     <img
-      src="/home-page-background.png"
+      src="{{ image.url }}"
       class="absolute inset-0 w-screen h-screen object-cover md:block hidden"
       alt=""
     />

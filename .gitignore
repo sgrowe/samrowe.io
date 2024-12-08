@@ -1,3 +1,9 @@
+
+# Built site
 /public/
 
+# Images
+/static/processed_images
+
+# Tailwind CSS
 /static/output.css
