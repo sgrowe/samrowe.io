@@ -13,7 +13,7 @@ London, UK
 
 ## Professional Summary
 
-A versatile full stack developer with 8+ years of experience delivering innovative technical solutions across retail, finance, hospitality, and public sector industries. Proven track record of leading complex software projects, mentoring teams, and driving technical excellence through cutting-edge technologies and strategic problem-solving. Adept at bridging technical complexity with business needs, with a strong background in microservices, cloud infrastructure, and mobile application development.
+A versatile full stack developer with 10+ years of experience delivering innovative technical solutions across retail, finance, hospitality, and public sector industries. Proven track record of leading complex software projects, mentoring teams, and driving technical excellence through cutting-edge technologies and strategic problem-solving. Adept at bridging technical complexity with business needs, with a strong background in microservices, cloud infrastructure, and mobile application development.
 
 ## Core Technical Skills
 
@@ -21,8 +21,8 @@ A versatile full stack developer with 8+ years of experience delivering innovati
 
 - Rust <span class="opacity-80 font-light">(Advanced)</span>
 - TypeScript <span class="opacity-80 font-light">(Advanced)</span>
-- Python <span class="opacity-80 font-light">(Intermediate)</span>
 - JavaScript <span class="opacity-80 font-light">(Advanced)</span>
+- Python <span class="opacity-80 font-light">(Intermediate)</span>
 - C# <span class="opacity-80 font-light">(Intermediate)</span>
 
 ### Cloud & Infrastructure
@@ -55,28 +55,26 @@ A versatile full stack developer with 8+ years of experience delivering innovati
 
 **[Contractor via Planes Studio](https://www.planes.studio/)** | Oct 2022 – July 2023
 
-- Led development of React Native mobile application for Slice, the UK's first eSIM-only mobile network
-  - Increased user acquisition by 40% through intuitive app design and seamless eSIM installation process
-  - Developed scalable GraphQL API server supporting multiple microservices with 99.9% uptime
-- Acted as Acting Tech Lead, managing critical production deployments and resolving complex technical challenges
-- Constructed marketing website using React and Next.js, integrating Dato CMS for dynamic content management
+- Created iOS and Android mobile apps for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
+- Developed a scalable GraphQL API server, providing a unified interface to multiple backend microservices
+- Served as Acting Tech Lead during the Tech Lead's absence, managing critical production deployments and resolving complex technical challenges
+- Constructed a marketing website using React and Next.js, integrating Dato CMS for dynamic content management
+- Dramatically speed up our end-to-end tests in CI, from roughly an hour to 20 minutes, by using sccache for distributed build caching
 
 ### Tech Lead | Vitamin London
 
 **Oct 2022 – July 2023**
 
-Key Projects and Achievements:
-
-- Developed a sophisticated drone video streaming platform for Skybound Rescuer
-  - Implemented advanced video streaming technologies reducing latency by 60%
+- Developed a sophisticated drone video streaming platform for [Skybound Rescuer](https://skyboundrescuerproject.com/)
+  - Implemented advanced drone control and video streaming technologies to allow remote control of DJI drones from a web browser
   - Utilized Kubernetes, Docker, and MQTT for robust, scalable infrastructure
-- Created Troopr.co.uk: A comprehensive career and events platform for military veterans
-  - Delivered fully functional platform in under 4 months
+- Created [Troopr.co.uk](https://www.troopr.co.uk/), a comprehensive career and events platform for military veterans
+  - Delivered a fully functional platform in under 5 months
   - Integrated Stripe for secure payment processing
-- Resolved performance bottlenecks for The Racing Manager, reducing page load times from minutes to 10-15 seconds
+- Resolved performance bottlenecks for [The Racing Manager](https://theracingmanager.com/), reducing page load times over a minute less than 5 seconds
   - Optimized GraphQL queries and implemented strategic caching mechanisms
-- Led technical migration for SilverRail, transitioning from WordPress to React-based site
-  - Improved site reliability and reduced maintenance costs by 35%
+- Led technical migration for [SilverRail](https://silverrailtech.com/), transitioning from WordPress to a React-based site
+- Interviewed and evaluated engineering candidates
 
 ### Senior Software Engineer | Red Badger
 
@@ -84,15 +82,16 @@ Key Projects and Achievements:
 
 Client Projects:
 
-- Levi's Internal Product Line Management Tool
-  - Led feature team developing collaborative merchant platform
-  - Conducted user engagement sessions to refine product requirements
-  - Interviewed and evaluated engineering candidates
-- Nando's Digital Platform
-  - Developed high-performance GraphQL API in Rust
-  - Improved application security and identity management
-- MHRA Microservices Platform
-  - Designed Kubernetes infrastructure with Istio service mesh
+- Levi’s internal product line management tool
+  - Led the feature team developing the “briefing” feature, used for a critical phase of Levi’s product development lifecycle
+  - Participated in user engagement sessions to refine product requirements
+- Nando’s Digital Platform
+  - Transitioned identity provider to improve uptime and security of all Nando’s app and websites
+  - Collaborated closely with teams across the organisation to ensure a seamless transition
+  - Developed high-performance GraphQL APIs in Rust
+  - Deployed services to Kubernetes
+- MHRA microservices platform
+  - Created [a microservices platform](https://github.com/MHRA/products) built upon Kubernetes, Istio service mesh, and Terraform
   - Implemented comprehensive monitoring using Prometheus and Azure Monitor
 
 ### Previous Roles
@@ -115,13 +114,13 @@ BSc Physics (2:1)
 
 ## Additional Skills & Certifications
 
-Technical:
+**Technical:**
 
 - Continuous Integration (GitHub Actions, Jenkins)
 - Service Mesh Technologies (Istio)
 - Monitoring Tools (Prometheus, Azure Monitor)
 
-Soft Skills:
+**Soft Skills:**
 
 - Technical Mentorship
 - Cross-functional Collaboration
@@ -130,8 +129,8 @@ Soft Skills:
 
 ## Personal Interests
 
-- Open Water Scuba Diving (PADI Qualified)
-- Music Festivals
-- International Travel
 - Football
-- Skiing
+- Running
+- Travel
+- Music Festivals
+- Scuba Diving (PADI Qualified)
