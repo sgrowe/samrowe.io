@@ -7,7 +7,7 @@ module.exports = {
         'sm+': '0.9375rem', // 15px
       },
       fontFamily: {
-        merriweather: ['Merriweather', 'serif'],
+        merriweather: ['Merriweather', 'Georgia', 'serif'],
       },
       backgroundImage: {
         img: 'url(var(--img))',
