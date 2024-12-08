@@ -4,10 +4,16 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/jpeg" href="/favicon.jpeg" />
     <meta name="viewport" content="width=device-width" />
-    <title>Sam Rowe - CV</title>
-    <link rel="stylesheet" href="/cv.css" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/cv2.css" />
   </head>
   <body class="flex flex-col text-sm leading-6" style="--fade-in-step: 1">
+    <div class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32">
+      {{ page.content | safe }}
+    </div>
+
+    <!-- PREV: -->
+
     <div class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32">
       <div>
         <h1 class="text-sm+ font-bold"><a href="/">Sam Rowe</a></h1>
