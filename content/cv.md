@@ -3,9 +3,13 @@ title = "Sam Rowe — CV"
 template = "cv.html"
 +++
 
-# [Sam Rowe — Full Stack Developer](/)
+# [Sam Rowe — Full Stack Developer](https://samrowe.io/)
+
+[github.com/sgrowe](https://github.com/sgrowe/)
 
 [sam@samrowe.io](mailto:sam@samrowe.io)
+
+London, UK
 
 ## Professional Summary
 
@@ -15,11 +19,11 @@ A versatile full stack developer with 8+ years of experience delivering innovati
 
 ### Programming Languages
 
-- Rust (Advanced)
-- TypeScript (Advanced)
-- Python (Intermediate)
-- JavaScript (Advanced)
-- C# (Intermediate)
+- Rust <span class="opacity-80 font-light">(Advanced)</span>
+- TypeScript <span class="opacity-80 font-light">(Advanced)</span>
+- Python <span class="opacity-80 font-light">(Intermediate)</span>
+- JavaScript <span class="opacity-80 font-light">(Advanced)</span>
+- C# <span class="opacity-80 font-light">(Intermediate)</span>
 
 ### Cloud & Infrastructure
 
@@ -28,7 +32,7 @@ A versatile full stack developer with 8+ years of experience delivering innovati
 - Google Cloud
 - Terraform
 - Docker
-- Continuous Integration/Deployment (CI/CD)
+- Continuous Integration and Deployment (CI/CD)
 
 ### Web & Mobile Technologies
 
@@ -41,16 +45,15 @@ A versatile full stack developer with 8+ years of experience delivering innovati
 ### Databases
 
 - PostgreSQL
-- MySQL
 - Redis
 - DynamoDB
 - ElasticSearch
 
 ## Professional Experience
 
-### Senior Software Engineer | Slice Mobile Project
+### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-**Planes Studio | London, UK** | Oct 2022 – July 2023
+**[Contractor via Planes Studio](https://www.planes.studio/)** | Oct 2022 – July 2023
 
 - Led development of React Native mobile application for Slice, the UK's first eSIM-only mobile network
   - Increased user acquisition by 40% through intuitive app design and seamless eSIM installation process
@@ -94,19 +97,19 @@ Client Projects:
 
 ### Previous Roles
 
-Detailed experience at Entale, Qubit, and CGI Group showcasing progressive technical leadership and versatility in software development
+Full stack software development roles at Entale, Qubit, and CGI Group showcasing progressive technical leadership and versatility in software development
 
 ## Education
 
-**University of Bath** | BSc Physics (2:1)
-**2011 – 2015**
+BSc Physics (2:1)
 
-- Completed advanced low-level programming module in C
-- Conducted optical simulations for final year project supervised by BAE Systems
+**University of Bath**
+
+2011 – 2015
 
 ## Professional Development & Speaking
 
-- Delivered conference talk "Complex Animations Done Well" at elm-conf
+- Delivered conference talk [“Complex Animations Done Well”](https://youtu.be/DBVHxkMBfF4) at elm-conf
 - Proactive mentor and technical leader, consistently identifying and addressing team skill gaps
 - Regular contributor to technical discussions and process improvements
 
@@ -132,10 +135,3 @@ Soft Skills:
 - International Travel
 - Football
 - Skiing
-
-**Contact & Professional Links**
-
-- [LinkedIn Profile]
-- [GitHub Profile]
-- Email: [professional email]
-- Location: London, UK

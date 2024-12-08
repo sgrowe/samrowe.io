@@ -25,15 +25,22 @@
   </head>
 
   <body class="flex flex-col text-sm leading-6" style="--fade-in-step: 1">
-    {% set h1 = 'prose-h1:text-sm+ prose-h1:font-bold' %}
+    {% set h1 = 'prose-h1:text-sm+ prose-h1:font-bold prose-h1:mb-2' %}
     <!--  -->
     {% set h2 = 'prose-h2:mt-10 prose-h2:mb-4 prose-h2:animate-fade-in
     prose-h2:border-t-[1.5px] prose-h2:border-gray-700 prose-h2:pt-2
     prose-h2:text-sm prose-h2:font-light prose-h2:italic' %}
     <!--  -->
     {% set h3 = 'prose-h3:text-sm+ prose-h3:font-bold prose-h3:mb-2' %}
+    <!--  -->
+    {% set lists = 'prose-ul:list-disc prose-ul:space-y-1 prose-ul:mt-2
+    prose-ul:mb-6 [&_ul_ul]:ml-4' %}
+    <!--  -->
+    {% set links = '[&_li_a]:text-blue-500 [&_a:hover]:underline' %}
+    <!--  -->
+    {% set p = 'prose-p:mb-1' %}
     <div
-      class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32 {{ h1 }} {{ h2 }} {{ h3 }}"
+      class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32 {{ h1 }} {{ h2 }} {{ h3 }} {{ lists }} {{ links }}"
     >
       {{ page.content | safe }}
     </div>
