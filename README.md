@@ -10,5 +10,7 @@ asdf plugin add zola https://github.com/salasrod/asdf-zola && asdf install zola 
 
 ### Other environment variables
 
-`ZOLA_VERSION` | 0.19.2
-`TAILWIND_VERSION` | 3.4.16
+| Variable           | Value  |
+| ------------------ | ------ |
+| `ZOLA_VERSION`     | 0.19.2 |
+| `TAILWIND_VERSION` | 3.4.16 |
