@@ -14,13 +14,13 @@
   </head>
 
   <body
-    class="bg-gradient-to-br from-gray-100 via-white to-gray-100 min-h-screen flex md:items-center justify-center md:p-4"
+    class="bg-gradient-to-br from-gray-700 via-gray-800 to-gray-700 min-h-screen flex md:items-center justify-center md:p-4"
   >
     {% set image = resize_image(path='home-page-background.png', width=1440,
     op='fit_width') %}
     <img
       src="{{ image.url }}"
-      class="absolute inset-0 w-screen h-screen object-cover md:block hidden"
+      class="js-img-fade-in absolute inset-0 w-screen h-screen object-cover md:block hidden opacity-0 transition-opacity duration-700"
       alt=""
     />
 
@@ -106,5 +106,12 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.js-img-fade-in').forEach((img) => {
+          img.classList.remove('opacity-0')
+        })
+      })
+    </script>
   </body>
 </html>
