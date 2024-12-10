@@ -5,11 +5,17 @@ template = "cv.html"
 
 # [Sam Rowe — Full Stack Developer](https://samrowe.io/)
 
+<div class="pt-2 space-y-3">
+
+[samrowe.io](https://samrowe.io/)
+
 [github.com/sgrowe](https://github.com/sgrowe/)
 
 [sam@samrowe.io](mailto:sam@samrowe.io)
 
 London, UK
+
+</div>
 
 ## Professional Summary
 
