@@ -17,9 +17,9 @@ London, UK
 
 </div>
 
-## Professional Summary
+<!-- ## Professional Summary
 
-A versatile full stack developer with 10+ years of experience delivering innovative technical solutions across retail, finance, hospitality, and public sector industries. Proven track record of leading complex software projects, mentoring teams, and driving technical excellence through cutting-edge technologies and strategic problem-solving. Adept at bridging technical complexity with business needs, with a strong background in microservices, cloud infrastructure, and mobile application development.
+A versatile full stack developer with 10+ years of experience delivering innovative technical solutions across retail, finance, hospitality, and public sector industries. Proven track record of leading complex software projects, mentoring teams, and driving technical excellence through cutting-edge technologies and strategic problem-solving. Adept at bridging technical complexity with business needs, with a strong background in microservices, cloud infrastructure, and mobile application development. -->
 
 ## Core Technical Skills
 
@@ -59,7 +59,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-**[Contractor via Planes Studio](https://www.planes.studio/)** | Nov 2022 – Dec 2023
+**[Contractor via Planes](https://www.planes.studio/)** | Nov 2023 – Dec 2024
 
 - Created iOS and Android mobile apps for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Developed a scalable GraphQL API server, providing a unified interface to multiple backend microservices
@@ -69,7 +69,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Tech Lead | Vitamin London
 
-**Oct 2022 – July 2023**
+Oct 2022 – July 2023
 
 - Developed a sophisticated drone video streaming platform for [Skybound Rescuer](https://skyboundrescuerproject.com/)
   - Implemented advanced drone control and video streaming technologies to allow remote control of DJI drones from a web browser
@@ -84,7 +84,9 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | Red Badger
 
-**March 2019 – Sept 2022**
+March 2019 – Sept 2022
+
+<br />
 
 Client Projects:
 

@@ -40,7 +40,7 @@
     <!--  -->
     {% set p = 'prose-p:mb-1' %}
     <div
-      class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32 {{ h1 }} {{ h2 }} {{ h3 }} {{ lists }} {{ links }}"
+      class="m-4 my-8 sm:mx-auto sm:my-16 sm:max-w-[608px] md:my-32 print:my-0 {{ h1 }} {{ h2 }} {{ h3 }} {{ lists }} {{ links }}"
     >
       {{ page.content | safe }}
     </div>
