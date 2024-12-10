@@ -3,7 +3,7 @@ title = "Sam Rowe — CV"
 template = "cv.html"
 +++
 
-# [Sam Rowe — Full Stack Developer](https://samrowe.io/)
+# [Sam Rowe — Senior Full Stack Developer](https://samrowe.io/)
 
 <div class="pt-2 space-y-3">
 
