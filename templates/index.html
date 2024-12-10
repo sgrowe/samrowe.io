@@ -109,7 +109,9 @@
     <script>
       document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.js-img-fade-in').forEach((img) => {
-          img.classList.remove('opacity-0')
+          img.decode().then(() => {
+            img.classList.remove('opacity-0')
+          })
         })
       })
     </script>
