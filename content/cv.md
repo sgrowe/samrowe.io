@@ -59,7 +59,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-**[Contractor via Planes Studio](https://www.planes.studio/)** | Oct 2022 – July 2023
+**[Contractor via Planes Studio](https://www.planes.studio/)** | Nov 2022 – Dec 2023
 
 - Created iOS and Android mobile apps for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Developed a scalable GraphQL API server, providing a unified interface to multiple backend microservices
@@ -84,7 +84,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | Red Badger
 
-**Feb 2020 – Sept 2022**
+**March 2019 – Sept 2022**
 
 Client Projects:
 
