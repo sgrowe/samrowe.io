@@ -28,8 +28,8 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 - Rust <span class="opacity-80 font-light">(Advanced)</span>
 - TypeScript <span class="opacity-80 font-light">(Advanced)</span>
 - JavaScript <span class="opacity-80 font-light">(Advanced)</span>
+- Swift <span class="opacity-80 font-light">(Intermediate)</span>
 - Python <span class="opacity-80 font-light">(Intermediate)</span>
-- C# <span class="opacity-80 font-light">(Intermediate)</span>
 
 ### Cloud & Infrastructure
 
