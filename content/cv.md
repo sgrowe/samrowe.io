@@ -21,39 +21,15 @@ London, UK
 
 A versatile full stack developer with 10+ years of experience delivering innovative technical solutions across retail, finance, hospitality, and public sector industries. Proven track record of leading complex software projects, mentoring teams, and driving technical excellence through cutting-edge technologies and strategic problem-solving. Adept at bridging technical complexity with business needs, with a strong background in microservices, cloud infrastructure, and mobile application development. -->
 
-## Core Technical Skills
+## Key Technical Skills
 
-### Programming Languages
-
-- Rust <span class="opacity-80 font-light">(Advanced)</span>
+- React <span class="opacity-80 font-light">(Advanced)</span>
+- GraphQL <span class="opacity-80 font-light">(Advanced)</span>
 - TypeScript <span class="opacity-80 font-light">(Advanced)</span>
 - JavaScript <span class="opacity-80 font-light">(Advanced)</span>
+- Rust <span class="opacity-80 font-light">(Advanced)</span>
 - Swift <span class="opacity-80 font-light">(Intermediate)</span>
 - Python <span class="opacity-80 font-light">(Intermediate)</span>
-
-### Cloud & Infrastructure
-
-- Kubernetes
-- AWS
-- Google Cloud
-- Terraform
-- Docker
-- Continuous Integration and Deployment (CI/CD)
-
-### Web & Mobile Technologies
-
-- React
-- React Native
-- Next.js
-- GraphQL
-- Node.js
-
-### Databases
-
-- PostgreSQL
-- Redis
-- DynamoDB
-- ElasticSearch
 
 ## Professional Experience
 
