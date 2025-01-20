@@ -64,8 +64,8 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 - Created iOS and Android mobile apps for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Developed a scalable GraphQL API server, providing a unified interface to multiple backend microservices
 - Served as Acting Tech Lead during the Tech Lead's absence, managing critical production deployments and resolving complex technical challenges
-- Constructed a marketing website using React and Next.js, integrating Dato CMS for dynamic content management
-- Dramatically speed up our end-to-end tests in CI, from roughly an hour to 20 minutes, by using sccache for distributed build caching
+- Built a marketing website using React and Next.js, integrating Dato CMS for dynamic content management
+- Dramatically sped up our end-to-end tests in CI, from roughly an hour to 20 minutes, by using sccache for distributed build caching
 
 ### Tech Lead | Vitamin London
 
@@ -118,7 +118,6 @@ BSc Physics (2:1)
 
 - Delivered conference talk [“Complex Animations Done Well”](https://youtu.be/DBVHxkMBfF4) at elm-conf
 - Proactive mentor and technical leader, consistently identifying and addressing team skill gaps
-- Regular contributor to technical discussions and process improvements
 
 ## Additional Skills & Certifications
 
@@ -140,5 +139,5 @@ BSc Physics (2:1)
 - Football
 - Running
 - Travel
-- Music Festivals
+- Music
 - Scuba Diving (PADI Qualified)
