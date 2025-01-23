@@ -27,6 +27,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 - GraphQL <span class="opacity-80 font-light">(Advanced)</span>
 - TypeScript <span class="opacity-80 font-light">(Advanced)</span>
 - JavaScript <span class="opacity-80 font-light">(Advanced)</span>
+- Node.js <span class="opacity-80 font-light">(Advanced)</span>
 - Rust <span class="opacity-80 font-light">(Advanced)</span>
 - Swift <span class="opacity-80 font-light">(Intermediate)</span>
 - Python <span class="opacity-80 font-light">(Intermediate)</span>
@@ -44,7 +45,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 - Built a marketing website using React and Next.js, integrating Dato CMS for dynamic content management
 - Dramatically sped up our end-to-end tests in CI, from roughly an hour to 20 minutes, by using sccache for distributed build caching
 
-### Tech Lead | Vitamin London
+### Tech Lead | [Multivitamin Studio](https://multivitamin.studio/)
 
 Oct 2022 – July 2023
 
@@ -55,13 +56,13 @@ Oct 2022 – July 2023
 - Resolved performance bottlenecks for [The Racing Manager](https://theracingmanager.com/), reducing page load times for their biggest customers from over a minute less than 5 seconds
 - Led technical migration for [SilverRail](https://silverrailtech.com/), transitioning from WordPress to a React-based site
 
-### Senior Software Engineer | Red Badger
+### Senior Software Engineer | [Red Badger](https://red-badger.com/)
 
 March 2019 – Sept 2022
 
 <br />
 
-Client Projects:
+**Client projects:**
 
 - Levi’s internal product line management tool
   - Led the feature team developing the “briefing” feature, used for a critical phase of Levi’s product development lifecycle
@@ -70,17 +71,40 @@ Client Projects:
   - Transitioned identity provider to improve uptime and security of all Nando’s app and websites
   - Collaborated closely with teams across the organisation to ensure a seamless transition
   - Developed high-performance GraphQL APIs in Rust
-  - Deployed services to Kubernetes
+  - Deployed using Kubernetes and Istio service mesh
 - MHRA microservices platform
   - Created [a microservices platform](https://github.com/MHRA/products) built upon Kubernetes, Istio service mesh, and Terraform
-  - Implemented comprehensive monitoring using Prometheus and Azure Monitor
+  - Implemented monitoring using Prometheus and Azure Monitor
 
-### Previous Roles
+<div class="break-inside-avoid-page">
 
-Full stack software development roles at Entale, Qubit, and CGI Group showcasing progressive technical leadership and versatility in software development
+### Full Stack Engineer | [Entale](https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/)
 
-<!-- Push “Education” heading onto a new page -->
-<div class="w-full h-2 hidden print:block" ></div>
+March 2019 – Sept 2022
+
+</div>
+
+<br />
+
+<div class="break-inside-avoid-page">
+
+### JavaScript Engineer | [Qubit](https://www.coveo.com/en/company/news-releases/2021/coveo-acquires-qubit)
+
+Nov 2016 – Oct 2017
+
+</div>
+
+<br />
+
+<div class="break-inside-avoid-page">
+
+### Software Developer | [CGI Group](https://www.cgi.com/)
+
+Aug 2015 — Oct 2016
+
+</div>
+
+<br />
 
 ## Education
 
