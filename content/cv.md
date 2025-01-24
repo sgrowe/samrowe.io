@@ -36,7 +36,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-**[Contractor via Planes](https://www.planes.studio/)** | Nov 2023 – Dec 2024
+**[Contractor via Planes](https://www.planes.studio/)** | Nov 2023 – present
 
 - Created iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Rapidly built and shipped new app features (such as a refer a friend competition) to grow the customer base over 300% in just four months
