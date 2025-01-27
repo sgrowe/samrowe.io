@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- Responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Styles -->
+    <link href="/output.css" rel="stylesheet" />
+
+    <!-- Title -->
+    <title>Sam Rowe - blog</title>
+  </head>
+
+  <body>
+    {% for post in section.pages %}
+    <p><a href="{{ post.permalink }}">{{ post.title }}</a></p>
+    {% endfor %}
+  </body>
+</html>
