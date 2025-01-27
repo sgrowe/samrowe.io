@@ -76,35 +76,29 @@ March 2019 – Sept 2022
   - Created [a microservices platform](https://github.com/MHRA/products) built upon Kubernetes, Istio service mesh, and Terraform
   - Implemented monitoring using Prometheus and Azure Monitor
 
-<div class="break-inside-avoid-page">
+{% cv_concise_job_summary() %}
 
 ### Full Stack Engineer | [Entale](https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/)
 
 March 2019 – Sept 2022
 
-</div>
+{% end %}
 
-<br />
-
-<div class="break-inside-avoid-page">
+{% cv_concise_job_summary() %}
 
 ### JavaScript Engineer | [Qubit](https://www.coveo.com/en/company/news-releases/2021/coveo-acquires-qubit)
 
 Nov 2016 – Oct 2017
 
-</div>
+{% end %}
 
-<br />
-
-<div class="break-inside-avoid-page">
+{% cv_concise_job_summary() %}
 
 ### Software Developer | [CGI Group](https://www.cgi.com/)
 
 Aug 2015 — Oct 2016
 
-</div>
-
-<br />
+{% end %}
 
 ## Education
 
