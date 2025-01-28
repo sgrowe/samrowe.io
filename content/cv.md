@@ -38,12 +38,12 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 Nov 2023 – present
 
-- Created iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
+- Created [React Native](https://reactnative.dev/) iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Rapidly built and shipped new app features (such as a refer a friend competition) to grow the customer base over 300% in just four months
 - Served as Acting Tech Lead for four weeks during the Tech Lead's absence, managing production deployments and triaging and resolving complex production issues
-- Developed a scalable GraphQL API server, providing a secure interface to multiple backend microservices
-- Built a marketing website using React and Next.js, integrating Dato CMS for dynamic content management
-- Dramatically sped up our end-to-end tests in CI, from roughly an hour to 20 minutes, by using sccache for distributed build caching
+- Developed a scalable [GraphQL](https://graphql.org/) API server using [TypeScript](https://www.typescriptlang.org/) and [Node.js](https://nodejs.org), providing a secure and scalable interface to multiple backend microservices
+- Built a marketing website using [React](https://react.dev/) and [Next.js](https://nextjs.org/), integrating Dato CMS for dynamic content management
+- Dramatically sped up our end-to-end tests in [CI](https://martinfowler.com/articles/continuousIntegration.html), from roughly an hour to 20 minutes, by using [sccache](https://github.com/mozilla/sccache#readme) for distributed build caching
 
 ### Tech Lead | [Multivitamin Studio](https://multivitamin.studio/)
 
@@ -51,10 +51,10 @@ Oct 2022 – July 2023
 
 - Grew the capabilities of the development team by analysing and identifying skills gaps in the current team, mentoring existing engineers, and leading the interviewing and hiring of two additional engineers
 - Built a sophisticated drone video streaming platform for [Skybound Rescuer](https://skyboundrescuerproject.com/)
-  - Using Kubernetes, Docker, MQTT and Redis hosted on AWS, this platform allowed non-technical users to create a flight path for a drone in their web browser, and then view the real-time video stream from the drone as it then carried out this flight plan
+  - Using [Kubernetes](https://kubernetes.io/), [Docker](https://www.docker.com/), [MQTT](https://mqtt.org/) and [Redis](https://redis.io/) hosted on [AWS](https://aws.amazon.com/), this platform allowed non-technical users to create a flight path for a drone in their web browser, and then view the real-time video stream from the drone as it then carried out this flight plan
 - Led development of [Troopr.co.uk](https://www.troopr.co.uk/), a comprehensive careers and events platform for military veterans in under 5 months
 - Resolved performance bottlenecks for [The Racing Manager](https://theracingmanager.com/), reducing page load times for their biggest customers from over a minute less than 5 seconds
-- Led technical migration for [SilverRail](https://silverrailtech.com/), transitioning from WordPress to a React-based site
+- Led technical migration for [SilverRail](https://silverrailtech.com/), transitioning seamlessly from WordPress to a React-based site
 
 ### Senior Software Engineer | [Red Badger](https://red-badger.com/)
 
