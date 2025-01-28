@@ -36,7 +36,7 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 
 ### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-**[Contractor via Planes](https://www.planes.studio/)** | Nov 2023 – present
+Nov 2023 – present
 
 - Created iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
 - Rapidly built and shipped new app features (such as a refer a friend competition) to grow the customer base over 300% in just four months
@@ -83,7 +83,7 @@ March 2019 – Sept 2022
 March 2019 – Sept 2022
 
 - As the first engineering hire at an early stage startup, I worked across the entire stack to help rapidly build our innovative podcast app
-- Created a fast and highly interactive React Native mobile app
+- Created a fast and highly interactive React Native mobile app which was eventually [acquired](https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/)
 - Provisioned infrastructure on AWS using [Terraform](https://www.terraform.io/)
 - Developed backend APIs in Node.js
 - Built an distributed podcast feed scraping service in Python (using [Scrapy](https://scrapy.org/)) which fed data into an [Elasticsearch](https://www.elastic.co/elasticsearch) search service
