@@ -82,6 +82,12 @@ March 2019 – Sept 2022
 
 March 2019 – Sept 2022
 
+- As the first engineering hire at an early stage startup, I worked across the entire stack to help rapidly build our innovative podcast app
+- Created a fast and highly interactive React Native mobile app
+- Provisioned infrastructure on AWS using [Terraform](https://www.terraform.io/)
+- Developed backend APIs in Node.js
+- Built an distributed podcast feed scraping service in Python (using [Scrapy](https://scrapy.org/)) which fed data into an [Elasticsearch](https://www.elastic.co/elasticsearch) search service
+
 {% end %}
 
 {% cv_concise_job_summary() %}
