@@ -24,9 +24,8 @@ A versatile full stack developer with 10+ years of experience delivering innovat
 ## Key Technical Skills
 
 - React <span class="opacity-80 font-light">(Advanced)</span>
+- TypeScript/JavaScript <span class="opacity-80 font-light">(Advanced)</span>
 - GraphQL <span class="opacity-80 font-light">(Advanced)</span>
-- TypeScript <span class="opacity-80 font-light">(Advanced)</span>
-- JavaScript <span class="opacity-80 font-light">(Advanced)</span>
 - Node.js <span class="opacity-80 font-light">(Advanced)</span>
 - Rust <span class="opacity-80 font-light">(Advanced)</span>
 - Swift <span class="opacity-80 font-light">(Intermediate)</span>
