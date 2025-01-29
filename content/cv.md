@@ -19,7 +19,7 @@ London, UK
 
 ## Professional Summary
 
-I’m an experienced Full Stack developer specialising in [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org) and [Rust](https://www.rust-lang.org/), with a particular affinity for statically typed languages. I love working in highly collaborative teams with a strong focus on the user’s needs.
+I’m an experienced Full Stack developer specialising in [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org) and [Rust](https://www.rust-lang.org/), with a particular affinity for statically typed languages. I love working in highly collaborative, cross-functional teams with a strong focus on the user’s needs.
 
 ## Key Technical Skills
 
@@ -61,8 +61,6 @@ Oct 2022 – July 2023
 ### Software Engineer (Mid II), Senior Software Engineer | [Red Badger](https://red-badger.com/)
 
 March 2019 – Sept 2022
-
-<br />
 
 - Achieved promotion from Software Engineer (Mid II) to Senior Software Engineer
 - Levi’s Assortify:
