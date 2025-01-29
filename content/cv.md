@@ -38,10 +38,10 @@ I’m an experienced Full Stack developer specialising in [React](https://react.
 Nov 2023 – present
 
 - Created [React Native](https://reactnative.dev/) iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK's first eSIM-only mobile network
-- Rapidly built and shipped new app features (such as a refer-a-friend competition) to grow the customer base over 300% in just four months
 - Served as Acting Tech Lead for four weeks during the Tech Lead's absence, managing production deployments and triaging and resolving complex production issues
 - Developed a scalable [GraphQL](https://graphql.org/) API server using [TypeScript](https://www.typescriptlang.org/) and [Node.js](https://nodejs.org), providing a secure and scalable interface to multiple backend microservices
 - Ensured high quality through over 80% unit test coverage using [Jest](https://jestjs.io/), and end-to-end tests using [Detox](https://github.com/wix/Detox)
+- Rapidly built and shipped new app features (such as a refer-a-friend competition) to grow the customer base over 300% in just four months
 - Dramatically sped up our end-to-end tests in [CI](https://martinfowler.com/articles/continuousIntegration.html), from roughly an hour to 20 minutes, by using [sccache](https://github.com/mozilla/sccache#readme) for distributed build caching
 - Built a marketing website using [React](https://react.dev/) and [Next.js](https://nextjs.org/), integrating Dato CMS for dynamic content management
 
