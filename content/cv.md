@@ -46,7 +46,7 @@ London, UK
 
 ## Professional Summary
 
-I’m an experienced Full Stack developer specialising in [TypeScript](https://www.typescriptlang.org) and [React](https://react.dev/), with a particular affinity for statically typed languages. I love working in highly collaborative, cross-functional teams with a strong focus on the user’s needs.
+Experienced Full Stack developer with a strong background in [TypeScript](https://www.typescriptlang.org) and [React](https://react.dev/), specialising in building high-performance, scalable, and extensible systems. Proven track record in leading complex projects, optimising system performance, and developing secure, scalable APIs. Adept at working in cross-functional teams and leveraging modern tooling to enhance development efficiency. Passionate about creating user-centric solutions and driving technical excellence in every project. I love working in highly collaborative, cross-functional teams with a strong focus on the user’s needs.
 
 ## Key Technical Skills
 
