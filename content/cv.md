@@ -53,19 +53,19 @@ Experienced Full Stack developer with a strong background in [TypeScript](https:
 - React <span class="opacity-80 font-light">(Advanced)</span>
 - TypeScript/JavaScript <span class="opacity-80 font-light">(Advanced)</span>
 - GraphQL <span class="opacity-80 font-light">(Advanced)</span>
-- Node.js <span class="opacity-80 font-light">(Advanced)</span>
-- Jest <span class="opacity-80 font-light">(Advanced)</span>
+- Rust <span class="opacity-80 font-light">(Advanced)</span>
 - Swift & SwiftUI <span class="opacity-80 font-light">(Intermediate)</span>
-  <!-- - Rust <span class="opacity-80 font-light">(Advanced)</span> -->
+  <!-- - Node.js <span class="opacity-80 font-light">(Advanced)</span> -->
+  <!-- - Jest <span class="opacity-80 font-light">(Advanced)</span> -->
   <!-- - Python <span class="opacity-80 font-light">(Intermediate)</span> -->
 
 ## Professional Experience
 
 ### Senior Software Engineer | [Slice Mobile](https://slicemobile.com/)
 
-Nov 2023 – present
+Nov 2023 — present
 
-- Created a beautiful [React Native](https://reactnative.dev/) iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK’s first eSIM-only mobile network
+- Created beautiful [React Native](https://reactnative.dev/) iOS and Android mobile apps ([rated <span class="lining-nums">4.9 out of 5</span> stars](https://apps.apple.com/gb/app/slice-mobile/id6470301393)) for [Slice](https://slicemobile.com), the UK’s first eSIM-only mobile network
 - Served as Acting Tech Lead for four weeks during the Tech Lead's absence, managing production deployments and triaging and resolving complex production issues
 - Developed a scalable [GraphQL](https://graphql.org/) API server using [TypeScript](https://www.typescriptlang.org/) and [Node.js](https://nodejs.org), providing a secure and scalable interface to multiple backend microservices
 - Ensured high quality through over 86% unit test coverage using [Jest](https://jestjs.io/), and end-to-end tests using [Detox](https://github.com/wix/Detox)
@@ -75,7 +75,7 @@ Nov 2023 – present
 
 ### Tech Lead | [Multivitamin Studio](https://multivitamin.studio/)
 
-Oct 2022 – July 2023
+Oct 2022 — July 2023
 
 - Grew the capabilities of the development team by analysing and identifying skills gaps in the current team, mentoring existing engineers, and leading the interviewing and hiring of two additional engineers
 - Led development of [Troopr.co.uk](https://www.troopr.co.uk/), a comprehensive careers and events platform for military veterans, built using [React](https://react.dev/), [Next.js](https://nextjs.org/), [PostgreSQL](https://www.postgresql.org/)
@@ -88,7 +88,7 @@ Oct 2022 – July 2023
 
 ### Software Engineer (Mid II), Senior Software Engineer | [Red Badger](https://red-badger.com/)
 
-March 2019 – Sept 2022
+March 2019 — Sept 2022
 
 - Achieved promotion to Senior Software Engineer
 - Levi’s Assortify:
@@ -107,7 +107,7 @@ March 2019 – Sept 2022
 
 ### Full Stack Engineer | [Entale](https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/)
 
-March 2019 – Sept 2022
+Nov 2017 — Feb 2019
 
 - As the first engineering hire at an early stage startup, I worked across the entire stack to help rapidly build our innovative podcast app and backend services
 - Created a fast and highly interactive [React Native](https://reactnative.dev/) mobile app which was eventually [acquired](https://www.dmgventures.co.uk/portfolio/dmgt-acquires-podcast-innovator-entale/)
@@ -120,7 +120,7 @@ March 2019 – Sept 2022
 
 ### JavaScript Engineer | [Qubit](https://www.coveo.com/en/company/news-releases/2021/coveo-acquires-qubit)
 
-Nov 2016 – Oct 2017
+Nov 2016 — Oct 2017
 
 {% end %}
 
@@ -138,7 +138,7 @@ BSc Physics (2:1)
 
 **University of Bath**
 
-2011 – 2015
+2011 — 2015
 
 ## Professional Development & Speaking
 
